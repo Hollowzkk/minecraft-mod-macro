@@ -1,0 +1,34 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "compatibilityLevel": "JAVA_17",
+  "package": "net.eq2online.macros.fabric.mixin",
+  "refmap": "macros.refmap.json",
+  "mixins": [
+    "MixinGuiChat",
+    "MixinShapedRecipes",
+    "MixinShapelessRecipes",
+    "MixinEntityLivingBase",
+    "MixinSPacketCollectItem",
+    "MixinGameSettings"
+  ],
+  "client": [
+    "IGuiEditSign",
+    "IGuiControls",
+    "IGuiKeyBindingList",
+    "IGuiGameOver",
+    "IGuiContainer",
+    "IGuiContainerCreative",
+    "IContainerCreative",
+    "II18n",
+    "ILocale",
+    "IKeyBinding",
+    "IKeyEntry",
+    "IThreadDownloadImageData",
+    "IRenderGlobal",
+    "ICreativeSlot"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
