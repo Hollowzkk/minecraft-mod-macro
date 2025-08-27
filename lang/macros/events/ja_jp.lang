@@ -1,0 +1,151 @@
+macro.help.event.line3=&cイベントマクロ&6の編集中です。このマクロではユーザーからパラメータを
+macro.help.event.line4=受け取れません。&c $$<file.txt> &6を使用しマクロファイル読み込みと、
+macro.help.event.line5=&c$${&6 と &c}$$&6を使用しスクリプトを実行することができます。￢
+
+# Event 1000 (onJoinGame)
+
+macro.help.event.onjoingame.line[0]=&f<onJoinGame>
+macro.help.event.onjoingame.line[1]=このイベントはゲーム開始時(シングルまたはマルチプレイ)に実行され、
+macro.help.event.onjoingame.line[2]=バックグラウンドマクロの開始やログイン時のサーバーコマンドを実行
+macro.help.event.onjoingame.line[3]=することができます。
+
+# Event 1001 (onChat)
+
+macro.help.event.onchat.line[0]=&f<onChat>
+macro.help.event.onchat.line[1]=このイベントはサーバーからチャットを受信したときに実行されます。
+macro.help.event.onchat.line[2]=&cCHAT&6 定数を使うことで受信したチャットメッセージをイベント内で
+macro.help.event.onchat.line[3]=使用することができます。
+
+# Event 1002 (onHealthChange)
+
+macro.help.event.onhealthchange.line[0]=&f<onHealthChange>
+macro.help.event.onhealthchange.line[1]=このイベントは、例えばダメージを受けたり食べ物やポーションで
+macro.help.event.onhealthchange.line[2]=回復して体力が変化したときに実行されます。一つのハートごとに
+macro.help.event.onhealthchange.line[3]=2だけ値が変化するので体力の最大は20になります。今の体力を取得するには
+macro.help.event.onhealthchange.line[4]=&cHEALTH&6 定数を使いましょう。
+
+# Event 1003 (onFoodChange)
+
+macro.help.event.onfoodchange.line[0]=&f<onFoodChange>
+macro.help.event.onfoodchange.line[1]=このイベントは満腹度が変化したときに実行されます。一つの
+macro.help.event.onfoodchange.line[2]=食糧アイコンごとに2だけ値が変化するので満腹度の最大は20になります。
+macro.help.event.onfoodchange.line[3]=今の満腹度を取得するには &cHUNGER&6 定数を使いましょう。
+macro.help.event.onfoodchange.line[4]=
+
+# Event 1004 (onArmourChange)
+
+macro.help.event.onarmourchange.line[0]=&f<onArmourChange>
+macro.help.event.onarmourchange.line[1]=このイベントは例えば防具が壊れたり新しい防具を着たりして
+macro.help.event.onarmourchange.line[2]=防御点が変化したときに実行されます。一つの防具アイコンごとに
+macro.help.event.onarmourchange.line[3]=2だけ値が変化するので防御点の最大は20になります。
+macro.help.event.onarmourchange.line[4]=今の防御点を取得するには &cARMOUR&6 定数を使いましょう。
+
+# Event 1005 (onWorldChange)
+
+macro.help.event.onworldchange.line[0]=&f<onWorldChange>
+macro.help.event.onworldchange.line[1]=このイベントはワールドが変わったときに実行されます。
+macro.help.event.onworldchange.line[2]=例えばマルチで複数のワールドを行き来したり、シングルで
+macro.help.event.onworldchange.line[3]=オーバーワールドやネザー、エンドを旅行したりするときです。
+
+# Event 1006 (onModeChange)
+
+macro.help.event.onmodechange.line[0]=&f<onModeChange>
+macro.help.event.onmodechange.line[1]=このイベントは、例えばクリエイティブとサバイバルを切り替えたりして
+macro.help.event.onmodechange.line[2]=ゲームモードが変化したときに実行されます。
+
+# Event 1007 (onInventorySlotChange)
+
+macro.help.event.oninventoryslotchange.line[0]=&f<onInventorySlotChange>
+macro.help.event.oninventoryslotchange.line[1]=このイベントは選択されているスロットが変化したときに実行されます。
+macro.help.event.oninventoryslotchange.line[2]=前に選択されていたスロットを取得するには &cOLDINVSLOT&6 定数を
+macro.help.event.oninventoryslotchange.line[3]=使いましょう。
+
+# Event 1008 (onOxygenChange)
+
+macro.help.event.onoxygenchange.line[0]=&f<onOxygenChange>
+macro.help.event.onoxygenchange.line[1]=このイベントは酸素レベルが変化したときに実行されます。酸素レベルは
+macro.help.event.onoxygenchange.line[2]=水中でおぼれる前、息ができる数tickの間に変化していきます。
+macro.help.event.onoxygenchange.line[3]=今の酸素レベルを取得するには &cOXYGEN&6 定数を使いましょう。
+macro.help.event.onoxygenchange.line[4]=
+
+# Event 1009 (onXPChange)
+
+macro.help.event.onxpchange.line[0]=&f<onXPChange>
+macro.help.event.onxpchange.line[1]=このイベントは経験値が変化したときに実行されます。
+macro.help.event.onxpchange.line[2]=今の経験値を取得するには &cTOTALXP&6 と &cXP&6 定数を使いましょう。
+macro.help.event.onxpchange.line[3]=
+
+# Event 1010 (onLevelChange)
+
+macro.help.event.onlevelchange.line[0]=&f<onLevelChange>
+macro.help.event.onlevelchange.line[1]=このイベントはレベルか変化したときに実行されます。
+macro.help.event.onlevelchange.line[2]=今のレベルを取得するには &cLEVEL&6 定数を使いましょう。
+
+# Event 1011 (onItemDurabilityChange)
+
+macro.help.event.onitemdurabilitychange.line[0]=&f<onItemDurabilityChange>
+macro.help.event.onitemdurabilitychange.line[1]=このイベントは今保持しているアイテムの耐久度が変化したときに
+macro.help.event.onitemdurabilitychange.line[2]=実行されます。いつ耐久度が変化するかや耐久度の最大は
+macro.help.event.onitemdurabilitychange.line[3]=アイテムによって違います。今持っているアイテムの耐久度を
+macro.help.event.onitemdurabilitychange.line[4]=取得するには &cDURABILITY&6 定数を使いましょう。
+
+# Event 1012 (onWeatherChange)
+
+macro.help.event.onweatherchange.line[0]=&f<onWeatherChange>
+macro.help.event.onweatherchange.line[1]=このイベントは天気が変化したときに実行されます。
+macro.help.event.onweatherchange.line[2]=今の雨の強さを取得するには &cRAIN&6 定数を使いましょう。
+macro.help.event.onweatherchange.line[3]=
+
+# Event 1013 (onPickupItem)
+
+macro.help.event.onpickupitem.line[0]=&f<onPickupItem>
+macro.help.event.onpickupitem.line[1]=このイベントはプレイヤーがアイテムを拾ったときに実行されます。
+macro.help.event.onpickupitem.line[2]=拾ったアイテムのIDを取得するには &cPICKUPID&6 定数を、
+macro.help.event.onpickupitem.line[3]=拾ったアイテムの名前を取得するには &cPICKUPITEM&6 定数を、
+macro.help.event.onpickupitem.line[4]=拾ったアイテムの数を取得するには &cPICKUPAMOUNT&6 定数を
+macro.help.event.onpickupitem.line[5]=使いましょう。
+
+# Event 1014 (onPlayerJoined)
+
+macro.help.event.onplayerjoined.line[0]=&f<onPlayerJoined>
+macro.help.event.onplayerjoined.line[1]=このイベントはサーバーに誰かが入ってきたときに実行されます。
+macro.help.event.onplayerjoined.line[2]=入ってきた人の名前を取得するには &cJOINEDPLAYER&6 定数を
+macro.help.event.onplayerjoined.line[3]=使いましょう。
+
+# Event 1015 (onShowGui)
+
+macro.help.event.onshowgui.line[0]=&f<onShowGui>
+macro.help.event.onshowgui.line[1]=このイベントはMinecraftのGUIが変化したときに実行されます。
+macro.help.event.onshowgui.line[2]=表示されたGUIのクラス名を取得するには &cGUI&6 定数を使い、
+macro.help.event.onshowgui.line[3]=値が"NONE"だった場合はどのGUIも表示されていないということです。
+macro.help.event.onshowgui.line[4]=
+
+# Event 1016 (onArmourDurabilityChange)
+
+macro.help.event.onarmourdurabilitychange.line[0]=&f<onArmourDurabilityChange>
+macro.help.event.onarmourdurabilitychange.line[1]=このイベントは今着用している防具の耐久度が変化したときに
+macro.help.event.onarmourdurabilitychange.line[2]=実行されます。いつ耐久度が変化するかや耐久度の最大は
+macro.help.event.onarmourdurabilitychange.line[3]=アイテムによって違います。
+
+# Event 1017 (onAutoCraftingComplete)
+
+macro.help.event.onautocraftingcomplete.line[0]=&f<onAutoCraftingComplete>
+macro.help.event.onautocraftingcomplete.line[1]=このイベントはオートクラフトが完了したときに実行されます。
+macro.help.event.onautocraftingcomplete.line[2]=オートクラフトが完了した原因を取得するには &cREASON&6 定数を
+macro.help.event.onautocraftingcomplete.line[3]=使いましょう。
+
+# Event 1018 (onConfigChange)
+
+macro.help.event.onconfigchange.line[0]=&f<onConfigChange>
+macro.help.event.onconfigchange.line[1]=このイベントは使用するコンフィグが変更されたときに実行されます。
+macro.help.event.onconfigchange.line[2]=変更後のコンフィグの名前を取得するには &cCONFIG&6 定数を使いましょう。
+macro.help.event.onconfigchange.line[3]=&c&l注意: このイベントは&n変更後の方の&r&c&lコンフィグにより実行される
+macro.help.event.onconfigchange.line[4]=&c&lのであり、&n古い方ではありません！
+
+# Event 1020 (onSendChatMessage)
+
+macro.help.event.onsendchatmessage.line[0]=&f<onSendChatMessage>
+macro.help.event.onsendchatmessage.line[1]=このイベントはチャットを送信したときに実行されます。
+macro.help.event.onsendchatmessage.line[2]=送信されたチャットを取得するには &cCHAT&6 定数を使いましょう。
+macro.help.event.onsendchatmessage.line[3]=
+

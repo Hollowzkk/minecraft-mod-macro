@@ -1,0 +1,593 @@
+
+key.categories.macros=&fMacro / Keybind Mod
+
+key.macros=Macro de Activación
+key.macro_override=Macro de Superposición
+
+message.enabledsp=&b[MACROS] Macros activadas.
+message.autosp=&b[MACROS] Usando la configuración: &a%s
+message.automp=&b[MACROS] Usando la configuración en el servidor: &a%s
+
+mod.configpanel.title=Configuración del mod Macro / Keybind
+
+options.title=Configuración de Macros
+options.selectconfig=Selecciona la configuración
+options.option.title=Configuración
+options.option.general=Configuración General
+options.option.enableoverride=Habilitar la &ffunción de &b"Superposición"
+options.option.enableoverridechat=Habilitar la &ffunción de &b"Superposición" del chat
+options.option.enableoverridecmdblk=Habilitar la &ffunción de &b"Superposición" en la GUI del Bloque de Comandos
+options.option.enableautoswitch=Activar cambio automático
+options.option.discovery=Configuración de comandos
+options.option.waitforhomecount=Esperar a contar hogares (mas fiable)
+options.option.commandhomelist=Comando para ver la &blista de hogares
+options.option.commandtownlist=Comando para ver la &blista de ciudades.
+options.newconfig.title=Crear configuración.
+options.newconfig.prompt=Introduce un nombre para la nueva configuración.
+options.newconfig.prompt2=Usar el servidor actual
+options.newconfig.option=Copiar la configuración actual
+options.defaultconfig=Predeterminada
+options.addconfig=&7<Añadir configuración>
+
+gui.auto=Auto
+gui.add=Añadir
+gui.save=Guardar
+gui.yes=Si
+gui.no=No
+gui.ok=OK
+gui.cancel=Cancelar
+gui.create=Añadir
+gui.icon=Icono
+gui.copy=Copiar
+gui.move=Mover
+gui.delete=Borrar...
+gui.edit=Editar
+gui.importall=<< Importar todo
+gui.refresh=Actualizar
+gui.buttonopts=Añadir Botón
+
+macro.bind.title=Asignaciones
+macro.edit.title=Editar Macro
+macro.currentconfig=Configuración: &f%s
+macro.config.global=Todas las configuraciones
+macro.prompt.execute=<Pulsa la tecla asignada a una Macro para ejecutarla>
+macro.prompt.edit=<Presiona la tecla a editar o haz clic en la tecla correspondiente>
+macro.prompt.bind=Macro para &f%s
+macro.keyname.control=Control
+macro.keyname.alt=Alt
+macro.keyname.shift=Shift
+macro.option.title=Configurar
+macro.option.inhibit=No recordar parámetros.
+macro.option.global=Aplicar en todas las configuraciones.
+macro.action.title=Acciones
+macro.action.editfile=Archivos...
+macro.help.title=Ayuda
+
+macro.help.line1=Introduce los comandos que quieres ejecutar separando estos con "|"
+macro.help.line2=Por ejemplo: &c /give yomismito 123|/give yomismito 456
+
+macro.help.line3=Usa &c$$<archivo.txt> &6para incluir un archivo o&c $$m &6para seleccionar uno.
+macro.help.line4=Usa &c$$? &6o&c $$[texto] &6para que pida un valor en relación al "texto" escrito.
+macro.help.line5=Usa &c$$0&6-&c$$9 &6para que pida un texto predeterminado de un archivo.
+macro.help.line6=Usa &c$$i &6para que pida un ítem ó &c$$i:d &6para un ítem con desgaste.
+macro.help.line7=Usa &c$$t &6para que pida una ciudad ó &c$$w &6para que pida un warp.
+macro.help.line8=Usa &c$$f &6para que pida un amigo ó &c$$u &6para seleccionar un usuario conectado.
+macro.help.line9=Usa &c$$h &6para que pida un hogar ó &c$$p &6para unas coordenadas.
+macro.help.line10=Usa &c$$! &6para finalizar una Macro y que esta quede a la espera en el chat.
+macro.help.line11=Encerrar scripts con &c$${&6 y &c}$$&6
+
+macro.help.line12=Usar conjuntamente con la tecla:
+macro.help.line13=La Macro solo se activará cuando se pulsen las
+macro.help.line14=teclas indicadas.
+
+macro.help.inhibit=Prevenir que se guarden los parámetros:
+macro.help.global=Usar esta Macro en todas las configuraciones:
+
+param.prompt.param=Escribe el parámetro&e%s&c para <&e%s&c>
+param.prompt.inner=Escribe el parámetro interno &e%s&c para <&e%s&c>
+param.prompt.named=Escribe el parámetro para <&e%s&c>
+param.prompt.item=Escribe el ID de ítem para <&e%s&c>
+param.prompt.town=Escribe el nombre de la ciudad para <&e%s&c>
+param.prompt.home=Escribe el nombre del hogar para <&e%s&c>
+param.prompt.person=Escribe el nombre de %s para <&e%s&c>
+param.prompt.friend=amigo
+param.prompt.user=usuario
+param.prompt.list=Elije una opción <&e%s&c>
+
+param.action.confirmdelete=Seguro que quieres borrarlo
+param.action.confirmdeletefile=¿Quieres borrar el archivo?
+
+list.new.file=&7<Nuevo Archivo>
+list.new.friend=&7<Nuevo Amigo>
+list.new.home=&7<Nuevo Hogar>
+list.new.town=&7<Nueva Ciudad>
+list.new.preset=&7<Nuevo Texto>
+list.prompt.preset=Escribe algo
+
+editor.choosefile=Elige el archivo a editar:
+editor.createnewfile=Crear un nuevo archivo:
+editor.editing=Editando: %s
+
+entry.newentry=Nuevo texto:
+entry.newfriend=Nuevo amigo:
+entry.newtown=Nueva ciudad:
+entry.newhome=Nuevo hogar:
+entry.newfile=Nuevo archivo:
+entry.editentry=Editar texto:
+entry.editfriend=Editar amigo:
+entry.edittown=Editar ciudad:
+entry.editgome=Editar hogar:
+entry.chooseicon=Elegir icono:
+
+query.wait=Buscando, espera por favor...
+query.failed=La búsqueda no ha obtenido resultados.
+query.results=aResultados de la búsqueda:
+
+list.new.place=&7<Crear posición>
+entry.newplace=Nueva posición:
+entry.editplace=Editar posición:
+entry.usemylocation=<< Usar las coordenadas actuales
+macro.mode.normal=Macro normal
+macro.mode.keystate=Macro de Estado
+macro.mode.conditional=Macro Condicional
+
+macro.prompt.edit.simple=<Presiona una tecla de la Macro para editar>
+macro.prompt.keydown=Presionar
+macro.prompt.keyheld=Mantener
+macro.prompt.keyup=Soltar
+macro.prompt.repeatrate=Tiempo entre repeticiones (ms)
+
+macro.help2.line1=Las Macros con "Estado" te permiten asignar varias Macros al:
+macro.help2.line2=&csoltar&6, &cpresionar &6y &cmantener &6la tecla. En este tipo de Macro no
+macro.help2.line3=puedes incluir parámetros, pero si archivos usando &c$$<archivo.txt>
+macro.help2.line4=Puedes usar scripts, pero funciones como por ejemplo
+macro.help2.line5=&cWAIT&6 y &cLOOP&6 no funcionan con la función &cMantener&6.
+
+script.error.stack=Sintaxis errónea, puede que hayas dejado algo sin cerrar.
+script.error.context=Error de Contexto en el script.
+script.error.stackoverflow=Desbordamiento del script.
+
+options.option.alwaysgoback=Volver a la configuración de Macros
+options.option.optionsfirst=Mostrar primero la Configuración de la macro y luego la Ayuda
+options.option.simple=Usar una interfaz mas sencilla.
+options.option.runstatus=El menú &b"Superposición" muestra el estado de las Macros
+options.option.configs=Otros
+options.option.configs.use=Usar ajustes específicos para:
+options.option.configs.friends=Lista de amigos
+options.option.configs.homes=Lista de hogares
+options.option.configs.towns=Lista de ciudades
+options.option.configs.warps=Lista de warps
+options.option.configs.places=Lista de posiciones
+options.option.configs.presets=Elementos predeterminados
+options.option.commandwarplist=&fComando de &bLista de Warps
+options.option.commandwarplist2=&fComando para ver la &bLista de Warps &fadicionales
+options.option.commandwarplist2help=&7Usa &b%s &7para indicar la página
+options.option.advanced=Configuración avanzada
+options.option.reserved=Teclas reservadas
+
+param.prompt.warp=Introduce el nombre del warp para: <&e%s&c>
+list.new.warp=&7<Nuevo Warp>
+entry.newwarp=Nuevo warp:
+entry.editwarp=Editar warp:
+
+macro.option.inhibit.simple=Sin parámetros
+macro.option.global.simple=Global
+
+macro.hover.empty=&8<Vacío>
+
+gui.options=Cambiar configuración...
+
+options.option.directmode=Acceder al menú "in-game" sin &bagacharse
+options.option.compatibilitymode=Modo  de compatibilidad (requiere reiniciar)
+options.option.disabledeepinject=Desactivar "deep injection"
+options.option.keyboardedit=Distribución del Teclado editable
+options.option.debug=Activar modo depuración
+options.option.chathistory=Guardar mensajes enviados localmente
+
+entry.displayname=Nombre a mostrar
+
+message.usingpack=&b[MACROS] Usando Resourcepack &a%s
+message.badpack=&b[MACROS] No se ha podido encontrar el Resourcepack &a%s
+message.failedpack=&b[MACROS] Error al cargar el Resourcepack &a%s&b. Volviendo al de serie.
+
+script.error.nosign=&cNo tienes un cartel en la mano.
+
+macro.help.always=Forzar que esta Macro superponga las teclas conflictivas.
+macro.option.always=Siempre hacer "Superposición"
+macro.option.always.simple=Forzar "Superposición"
+
+macro.hover.overlay=Actualmente usado por &a%s
+
+message.config=&b[MACROS] Usando configuración &a%s
+message.overlay.add=&b[MACROS] Importando configuración &a%s
+message.overlay.remove=&b[MACROS] Desactivando configuración importada &a%s
+
+tooltip.options=Configuración
+tooltip.editfile=Editor de Archivos
+tooltip.icons=Modificar Iconos
+tooltip.bind=Teclas
+tooltip.guiedit=Editar GUI
+tooltip.perms=Ver Permisos
+
+macro.icons.title=Modificar iconos
+macro.icons.help=Haz clic en un icono para cambiar su imagen.
+macro.icons.town=Iconos de Ciudades:
+macro.icons.homes=Iconos de Hogares:
+
+thumbnail.help.hint1=Encuadra la captura, y clica o presiona
+thumbnail.help.hint2=la tecla Entrar para guardar.
+
+editor.title=Editar archivo de texto
+
+options.option.animation=Usar animaciones
+options.option.rememberpage=Recordar &bparámetros &fintroducidos
+
+macro.prompt.edit.event=<Elige el evento a editar>
+macro.prompt.edit.button=<Elige el botón a editar>
+macro.prompt.edit.buttons=<Clic izquierdo para editar Hotkeys de teclado, derecho para propiedades>
+macro.prompt.edit.unknown=&4<Ayuda no disponible>
+
+editor.rename.file=Renombrar Archivo
+editor.rename.file.prompt=Introduce un nombre nuevo para el archivo
+editor.savechanges=¿Deseas guardar cambios en el archivo
+editor.title.minimise=Minimizar editor
+editor.prompt.minimise=Esto minimizara el editor
+editor.prompt.saveonmin=¿Deseas guardar primero el archivo?
+editor.prompt.remember=Hacer esto siempre
+
+firstrun.title=Macro / Keybind Mod se ha instalado correctamente
+firstrun.line1=Felicidades!
+firstrun.line2=&eMacro / Keybind Mod &6ha sido cargado con éxito.
+firstrun.line3=Se recomienda configurar la función de &e"Superposición" y las
+firstrun.line4=&eHotkeys &6en Minecraft. &eOpciones...&6 >> &eControles...
+firstrun.line5=&6Pulsa &eConfigurar Macros&6 para hacerlo ahora. 
+firstrun.line6=Puedes modificar la configuración en cualquier momento, accediendo al
+firstrun.line7=&6menú del juego &eOpciones...&6 >> &eControles...
+firstrun.yes=Configurar Hotkeys
+firstrun.no=Cancelar
+
+options.option.largebuttons=Botones grandes
+options.option.showslots=Mostrar los números de cada slot
+options.option.autoscale=Autoredimensionar
+
+control.properties.title=Estilo de: %s
+control.properties.name=Texto:
+control.properties.button.hide=Ocultar si no está disponible
+control.properties.button.text=Nombre:
+control.properties.button.sticky=No cerrar GUI al usar
+control.properties.button.hotkey=Hotkey
+control.properties.slider.hotkeys=Teclas (+/-)
+
+control.delete.title=Borrar
+control.delete.line1=¿Quieres borrar
+
+grid.properties.title=Configuración de la matriz
+grid.properties.rows=Filas
+grid.properties.cols=Columnas
+grid.properties.colWidth=Ancho de Columnas
+
+macro.prompt.condition=Condición
+macro.prompt.condtrue=IF TRUE
+macro.prompt.condfalse=IF FALSE
+
+macro.help3.line1=Las macros condicionales permiten ejecutar diferentes macros basadas
+macro.help3.line2=en una determinada condición. Usar &cIF&6/&cELSE &6es muy potente
+macro.help3.line3=porque la condición se comprueba &nantes&r de que la macro
+macro.help3.line4=sea compilada. Esto permite el uso de diferentes parámetros en cada
+macro.help3.line5=macro.
+macro.help3.line6=En una macro condicional se puede utilizar cualquier parámetro
+macro.help3.line7=de una macro &cnormal&6.
+
+startuperrors.title=Errores detectados al iniciar
+startuperrors.line1=&eMacro / Keybind Mod&6 a detectado los siguientes errores al iniciar
+
+options.option.extra=Opciones extra
+options.option.chathidden=Ocultar el Chat de Minecraft
+
+control.properties.label.text=Etiqueta:
+control.properties.label.binding=Mostrar:
+control.properties.forecolour=Color del Texto
+control.properties.backcolour=Color de Fondo
+
+control.properties.label.align=Alineación:
+control.properties.label.align.topleft=Arriba Izquierda
+control.properties.label.align.topcentre=Arriba Centro
+control.properties.label.align.topright=Arriba Derecha
+control.properties.label.align.middleleft=Centro Izquierda
+control.properties.label.align.middlecentre=CENTRO
+control.properties.label.align.middleright=Centro Derecha
+control.properties.label.align.bottomleft=Abajo Izquierda
+control.properties.label.align.bottomcentre=Abajo Centro
+control.properties.label.align.bottomright=Abajo Derecha
+
+options.option.spamfilter=Configuración de protección Flood 
+options.option.spamfilter.enable=Activar protección contra &bflood 
+options.option.spamfilter.style=Tipo de protección Flood
+options.option.spamfilter.queuesize=Tamaño máximo de &bQueue&f
+
+options.option.simpleoverride=&fEstilo del &bpopup
+override.popup.style.normal=Barra Completa
+override.popup.style.mini=Popup Mínimo
+override.popup.style.none=Deshabilitado
+
+time.now=ahora
+time.never=nunca
+
+macro.permissions.title=Ver Permisos
+macro.permissions.banner=Última actualización el &f%s
+macro.permissions.script.title=Script de comandos denegados
+macro.permissions.script.info1=Actualmente están deshabilitados los siguiente comandos en el servidor por los permisos:
+macro.permissions.option.scriptwarnings=Generar alertas cuando un comando esté deshabilitado
+macro.permissions.gui.refresh=Forzar actualización
+
+script.error.denied=El comando %s ha sido denegado por el servidor
+
+param.option.replaceall=Reemplazar todos los incidentes
+editor.option.help=Mostrar ayuda
+
+control.properties.textarea.lifespan=Duración:
+options.option.textboxhighlight=Resaltar la sintaxis en el cuadro de texto
+control.properties.text.shadow=Sombra
+control.properties.text.border=Borde
+
+options.option.spamfilter.ignorecommands=Ignorar comando que comiencen con &b/
+options.option.debounce=Aplicar repetición en la macro activa
+
+control.properties.bar.expression=Expresión
+control.properties.bar.min=Valor min.
+control.properties.bar.max=Valor máx.
+
+macro.trigger.type.keys=Teclas
+macro.trigger.type.events=Eventos
+macro.trigger.type.control=Botones
+
+options.option.buttonsonchat=Permitir botones en la &fpantalla del &bchat
+
+macro.prompt.edit.control=<LMOUSE para editar, RMOUSE para propiedades>
+macro.prompt.list.sort=Presiona S para lista corta
+
+control.properties.bar.style=Estilo Barra
+control.properties.bar.style.horizontal=Horizontal
+control.properties.bar.style.vertical=Vertical
+control.properties.bar.expression=Expr.
+
+control.properties.bind=&e<Presiona una tecla>
+control.properties.none=&6<Asignar>
+
+layout.editor.title=Editor GUI
+
+layout.editor.new.button=Añadir Botón
+layout.editor.new.textarea=Añadir área de Texto
+layout.editor.new.label=Añadir Etiqueta
+layout.editor.new.progressbar=Añadir Barra de Progreso
+layout.editor.new.slider=Añadir Deslizante
+layout.editor.new.playbackstatus=Añadir estado de Macros
+layout.editor.new.icon=Añadir Icono
+layout.editor.new.layout=Añadir GUI Personalizada
+
+layout.editor.grid=Ajustar matriz
+
+layout.editor.slot=Slot
+layout.editor.screen=Pantalla
+layout.editor.nobinding=GUI sin asignar
+layout.editor.menu.create=Crear nueva pantalla
+layout.editor.menu.reset=Reiniciar todas las pantallas
+layout.editor.menu.rename=Introducir nombre de pantalla
+layout.editor.help.line1=Arrastra las pantallas de la lista para
+layout.editor.help.line2=para asignarla al slot de GUI. Puedes asignar
+layout.editor.help.line3=la misma pantalla en diferentes slots.
+layout.editor.available=Pantallas Disponibles
+layout.editor.assignments=Asignar Pantallas
+
+gui.exit=Exit
+
+editor.rename.gui=Renombrar Pantalla
+editor.rename.gui.prompt=Introduce un nuevo nombre para la pantalla &e%s
+
+layout.contextmenu.execute=Ejecutar Macro
+layout.contextmenu.edit=Editar Macro
+layout.contextmenu.design=Editar Botones
+
+layout.delete.title=Borrar Pantalla
+layout.delete.line1=¿Quieres borrar la pantalla
+
+layout.options.loadatstartup=Guardar slot asignados
+
+editor.menu.minimise=Minimizar editor  &eCTRL+TAB
+editor.menu.editother=Editar otro archivo
+editor.menu.help=Comando de Referencia  &eF1
+
+reference.title=Comando de Referencia
+reference.cmdlist=Comandos Disponibles
+reference.syntax=Sintaxis de Comando
+reference.desc=Descripción
+reference.return=Valor de Retorno
+reference.filtering=Filtrar: &f%s
+reference.filterprompt=<Comienza a escribir para filtrar los comandos>
+
+macro.inline.title=Editar
+
+options.option.filterablechat=Activar &bfiltrodechat&f GUI y eventos
+
+gui.link=Enlazar
+gui.unlink=Desenlazar
+gui.disable=Desactivar
+
+gui.key.disabled=Desactivado
+
+options.option.mode.description=Asignaciones de teclas
+options.option.mode.normal=&b%s&r+&b%s
+options.option.mode.direct=&b%s
+options.option.mode.disabled=Desactivado
+
+gui.bindings.goto=&eConfig. Macros
+
+options.option.gui=Opciones GUI
+options.option.debug.env=Mostrar entorno &cATENCIÓN: Caerán los FPS!
+options.option.debug.env.keys=Incluir teclas de entorno en modo depuración
+
+betaexpired.title=Esta versión beta a caducado
+betaexpired.line1=Gracias por ayudar a probar esta beta.
+betaexpired.line2=La versión completa de &eMod Macro / Keybind &6%s
+betaexpired.line3=está disponible para descargar y puede que contenga
+betaexpired.line4=algunos errores críticos corregidos.
+betaexpired.line5=Puedes seguir usando esta versión bajo tu propio riesgo,
+betaexpired.line6=pero este mensaje seguirá apareciendo y cualquier error
+betaexpired.line7=que encuentres será corregido en la próxima actualización.
+
+macro.option.cmdref=Comandos
+
+script.error.missingpop=Los Script terminan con pila no comprimida: &e%s
+
+crafting.status.progress=Fabricando ítem %d de %d...
+
+crafting.status.idle=En reposo
+crafting.status.waiting=Esperando
+crafting.status.calculate=Calculando
+crafting.status.waiting.inventory=Abriendo el Inventario...
+crafting.status.waiting.workbench=Esperando mesa de Crafting...
+crafting.status.opening.workbench=Abriendo mesa de Crafting...
+crafting.status.crafting=Fabricando...
+crafting.status.cancelled=Cancelado
+crafting.status.done=¡Terminado!
+
+crafting.fail.general=Error de fabricación
+crafting.fail.unexpected=Error inesperado
+crafting.fail.norecipe=No se ha encontrado la receta
+crafting.fail.timeout=Tiempo de operación agotado
+crafting.fail.ingredients=No se encuentran ítems
+crafting.fail.nogrid=Matriz del Crafting no disponible
+crafting.fail.workbench=Mesa de Crafting no encontrada
+crafting.fail.nospace=¡Inventario lleno!
+crafting.fail.cancelled=Cancelado
+
+spamfilter.style.none=Nada
+spamfilter.style.queue=En cola
+spamfilter.style.discard=Descartado
+spamfilter.style.log=Log solo
+
+control.properties.bordercolour=Color del Borde
+
+control.properties.playbackstatus.border=Mostrar Borde
+control.properties.playbackstatus.border.none=No mostrar
+control.properties.playbackstatus.border.interactive=Al interactuar
+control.properties.playbackstatus.border.always=Siempre
+control.properties.playbackstatus.clip=Acortar contenido
+
+playback.status.label=Estado de macros
+playback.idle=Sin macros en ejecución
+
+script.error.badchannel=&cNombre de canal incorrecto: &e%s
+script.error.nochannel=&cNo hay seleccionado un canal
+
+menu.chatfilter.edit=Editar Filtro de Chat
+
+patch.title=Crear Nueva Pantalla
+patch.prompt=Introducir el nombre de la nueva pantalla
+
+script.error.badregex=&cRegex incorrecto en %s: &e%s
+script.error.badreplacement=&cReemplazo incorrecto en %s: &e%s
+
+control.properties.icon.icon=Icono
+control.properties.icon.scale=Escala (1-10)
+control.properties.icon.durability=Durabilidad
+control.properties.icon.align=Alineación
+
+control.error.noicon=Sin icono
+control.error.badicon=Icono no válido: &e%s
+
+control.properties.label.align.fill=Rellenar
+control.properties.layout.name=ID del Diseño
+control.properties.layout.width=Ancho Máx.
+control.properties.layout.height=Alto Máx.
+control.properties.layout.align=Alineación
+control.properties.layout.help1=Usa &e0 &6para automático,
+control.properties.layout.help2=o valor > &e%d
+
+gui.elipsis=...
+resources.browse.title=Buscar Recursos
+
+macro.config.setstartup=Establecer como configuración inicial
+
+repl.title=Consola REPL
+repl.message=&6Enhorabuena has encontrado la interfaz REPL. REPL está en fase &nexperimental&r&6, por favor informa sobre los fallos y crashes
+repl.ready=Introduce el script (sin delimitadores) o escribe &aHELP&f para ver los comandos
+
+repl.aborted=&cAbortado por pulsación de tecla
+
+repl.error.message=&c%s
+repl.error.action=&cError: %s
+repl.error.unrecognised=&cIrreconocible: %s 
+repl.error.eval=&cSin espresión. Usa &aHELP&c para ver los comandos disponibles.
+
+repl.console.error.noaction=&cNo coincide ninguna acción &f%s
+
+repl.console.mode.append=&c+ &fIntroduce el script, usa &eEND &fpara completar:
+repl.console.mode.cancelled=&cEntrada cancelada
+repl.console.error.nobegin=&cError: &eEND &csin &eBEGIN
+
+repl.console.command.help.usage=HELP [comando]
+repl.console.command.help.help=Muestra ayuda sobre el comando especificado en la consola
+repl.console.command.begin.usage=BEGIN
+repl.console.command.begin.help=Modo de introducción multi-línea, permite introducir un script de varias líneas finalizadas por END
+repl.console.command.end.usage=END
+repl.console.command.end.help=Finaliza un script multi-línea y ejecuta el contenido del buffer
+repl.console.command.cat.usage=CAT <archivo.txt>
+repl.console.command.cat.help=Muestra el contenido del archivo especificado en la ventana de la consola
+repl.console.command.cls.usage=CLS
+repl.console.command.cls.help=Limpia la patalla de la consola
+repl.console.command.edit.usage=EDIT <archivo.txt>
+repl.console.command.edit.help=Abre un editor para el archivo especificado
+repl.console.command.exit.usage=EXIT
+repl.console.command.exit.help=Cierra la ventana de la consola
+repl.console.command.list.usage=LIST
+repl.console.command.list.help=Muestra una lista de los archivos de macros disponibles que hay en el directorio de macros
+repl.console.command.live.usage=LIVE [on|off]
+repl.console.command.live.help=Activa o desactiva el "modo directo". Cuando el modo directo está activo, los comando son enviados al servidor como mensajes de chat y estos serán mostrados en la consola. Cuando el modo directo está desactivado (predeterminado) el REPL actúa como un sandbox y los mensajes del chat solo son mostrados en la consola del servidor.
+repl.console.command.run.usage=RUN <archivo.txt> [argumento1] [argumento2] [más argumentos...
+repl.console.command.run.help=Ejecuta el script especificado de forma sincronizada. Los argumentos son proporcionados por el script de destino de la misma manera que EXEC (ej. parámetros $$[1], $$[2].. etc)
+repl.console.command.rm.usage=RM <archivo.txt>
+repl.console.command.rm.help=Elimina (borra) el archivo especificado
+repl.console.command.say.usage=SAY <mensaje>
+repl.console.command.say.help=Envía el mensaje especificado como mensaje de chat, solo se enviará remotamente si el "modo directo" está activado
+repl.console.command.tasks.usage=TASKS
+repl.console.command.tasks.help=Muestra una lista de las tareas ejecutadas actualmente
+repl.console.command.whoami.usage=WHOAMI
+repl.console.command.whoami.help=Muestra el nombre de usuario actual
+repl.console.command.version.usage=VERSION
+repl.console.command.version.help=Muestra la versión actual
+
+repl.console.help.actions=&eAcciones de script disponibles:
+repl.console.help.commands=&eComandos de consola disponibles:
+repl.console.help.eval=&eEjemplos de evaluación:
+repl.console.help.eval.example1=&6Expandir: &d? %TIME% 
+repl.console.help.eval.example2=&6Evaluar: &d?= 6 + 3 
+
+repl.console.list.message=&eListado de archivos disponibles:
+repl.console.list.summary=&eSe han encontrado &a%d &earchivo(s)
+
+repl.console.live.enabled=&eModo directo &aactivado&e. Los mensajes del chat serán enviados al servidor.
+repl.console.live.disabled=&eModo directo &cdesactivado&e. Los mensajes del chat no serán enviados al servidor.
+repl.console.live.cmdfailed=&cComando no enviado. &eEl Modo directo&c está &ldesactivado&r&c. Usa el comando &aLIVE&c para activar el modo directo.
+
+repl.console.run.badfile=&cNombre de archivo no válido: &f%s
+repl.console.run.nofile=&cArchivo no encontrado: &f%s
+repl.console.run.compile=&aCompilando &f%s
+repl.console.run.run=&aEjecutando &f%s
+repl.console.run.cancelled=&cCancelado
+
+repl.console.rm.prompt=&6eliminar el archivo <&f%s&6>? Confirmar (&fy&6/&fN&6)? &e
+repl.console.rm.done=&cSe ha eliminado el archivo %s
+
+repl.console.tasks.line=&apid&f=&a%s &6nombre&f=&6%s &dtiempo&f=&d%.3f
+
+repl.return.value=&7%s
+repl.return.array.start=&dArray [
+repl.return.array.entry=&a  %d &d-> &7%s
+repl.return.array.end=&d]
+repl.return.void=&7<vacío>
+repl.return.chat=&f[&a%s&f] -> &e%s
+repl.return.log=&b%s
+repl.return.logto=&a<%s> %s
+
+script.error.stackhint=&e%S &cesperado &d%s

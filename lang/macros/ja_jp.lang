@@ -1,0 +1,631 @@
+
+key.categories.macros=&fMacro / Keybind Mod
+
+key.macros=マクロの使用
+key.macro_override=キーのオーバーライド
+
+message.enabledsp=&b[MACROS] マクロが有効になりました
+message.autosp=&b[MACROS] 設定 &a%s&b を使用します
+message.automp=&b[MACROS] サーバー用設定 &a%s&b を使用します
+
+mod.configpanel.title=Macro / Keybind Mod の設定
+
+options.title=マクロの設定
+options.selectconfig=コンフィグの選択
+options.option.title=オプション
+options.option.general=一般設定
+options.option.enableoverride=&bオーバーライド&f機能を有効化
+options.option.enableoverridechat=チャット画面で&bオーバーライド&f機能を有効化
+options.option.enableoverridecmdblk=ｺﾏﾝﾄﾞﾌﾞﾛｯｸ画面で&bオーバーライド&f機能を有効化
+options.option.enableautoswitch=自動選択
+options.option.discovery=自動検出設定
+options.option.waitforhomecount=家の検索を待つ(安定度 高)
+options.option.commandhomelist=&b家のリスト&f表示コマンド
+options.option.commandtownlist=&b街のリスト&f表示コマンド
+options.newconfig.title=コンフィグの追加
+options.newconfig.prompt=新しいコンフィグの名前を入力してください
+options.newconfig.prompt2=サーバーのアドレスを使う
+options.newconfig.option=現在の設定をコピーする
+options.defaultconfig=デフォルトコンフィグ
+options.addconfig=&7<コンフィグの追加>
+
+gui.auto=自動
+gui.add=追加
+gui.save=保存
+gui.yes=はい
+gui.no=いいえ
+gui.ok=OK
+gui.cancel=キャンセル
+gui.create=作成
+gui.icon=アイコン
+gui.copy=コピー
+gui.move=移動
+gui.delete=消去
+gui.edit=編集
+gui.importall=<< 全てインポート
+gui.refresh=更新
+gui.buttonopts=ボタン・パネル設置
+
+macro.bind.title=マクロ設定一覧
+macro.edit.title=マクロの編集
+macro.currentconfig=コンフィグ: &f%s
+macro.config.global=全てのコンフィグ
+macro.prompt.execute=<実行するマクロのキーを押してください>
+macro.prompt.edit=<編集するマクロのキーを押すかクリックしてください>
+macro.prompt.bind=マクロの設定: &f%s
+macro.keyname.control=Ctrl
+macro.keyname.alt=Alt
+macro.keyname.shift=Shift
+macro.option.title=オプション
+macro.option.inhibit=パラメーターを記憶しない
+macro.option.global=全てのコンフィグに追加する
+macro.action.title=アクション
+macro.action.editfile=ファイル編集
+macro.help.title=ヘルプ
+
+macro.help.line1=マクロを入力してください。複数のコマンドを入力するには"|"で分割します。
+macro.help.line2=例)&c /give Player 123|/give Player 456￢
+
+macro.help.line3=&c$$<file.txt> &6でマクロファイルの読み込み、&c$$m &6でファイル選択欄を表示
+macro.help.line4=&c$$? &6もしくは&c $$[name] &6でテキスト入力欄を表示
+macro.help.line5=&c$$0&6-&c$$9 &6であらかじめ用意したテキストの選択欄を表示
+macro.help.line6=&c$$i &6でアイテム選択欄を表示、&c$$i:d &6でデータ値を含む選択欄を表示
+macro.help.line7=&c$$t &6で街の選択欄を表示、&c$$w &6でワープ地点選択欄を表示
+macro.help.line8=&c$$f &6でフレンドの選択欄を表示、&c$$u &6でオンラインプレイヤーの選択欄を表示
+macro.help.line9=&c$$h &6で家の選択欄を表示、&c$$p &6で座標を選択欄を表示
+macro.help.line10=&c$$! &6でマクロを終了し、プレイ画面に戻る
+macro.help.line11=&c$${&6 と &c}$$&6の間にスクリプトを入力
+
+macro.help.line12=ショートカットキー用のオプションキーの設定
+macro.help.line13=このマクロは特定のキーを押しているときのみ実行
+macro.help.line14=されます。
+
+macro.help.inhibit=毎回入力されたパラメータをリセットするための設定
+macro.help.global=このマクロを全てのコンフィグで使用するための設定
+
+param.prompt.param=&e%s&cパラメータを入力 <&e%s&c>
+param.prompt.inner=%s(&e%s&cパラメータ内)を入力 <&e%s&c>
+param.prompt.named=以下の名前のパラメータを入力 <&e%s&c>
+param.prompt.item=アイテムIDを入力 <&e%s&c>
+param.prompt.town=街の名前を入力 <&e%s&c>
+param.prompt.home=家の名前を入力 <&e%s&c>
+param.prompt.person=%sの名前を入力 <&e%s&c>
+param.prompt.friend=フレンド
+param.prompt.user=プレイヤー
+param.prompt.list=オプションの選択 <&e%s&c>
+
+param.action.confirmdelete=以下を消去してもよろしいですか？
+param.action.confirmdeletefile=以下のファイルを消去してもよろしいですか？
+
+list.new.file=&7<新規ファイル>
+list.new.friend=&7<フレンドの追加>
+list.new.home=&7<家の追加>
+list.new.town=&7<街の追加>
+list.new.preset=&7<テキストの追加>
+list.prompt.preset=テキストを入力
+
+editor.choosefile=編集するファイルを選択:
+editor.createnewfile=新規ファイルを作成:
+editor.editing=%sを編集中...
+
+entry.newentry=新規テキスト:
+entry.newfriend=新規フレンド:
+entry.newtown=新規 街:
+entry.newhome=新規 家:
+entry.newfile=新規ファイル:
+entry.editentry=テキストの編集:
+entry.editfriend=フレンドの編集:
+entry.edittown=街の編集:
+entry.editgome=家の編集:
+entry.chooseicon=アイコン選択:
+
+query.wait=サーバーにクエリ中...
+query.failed=見つかりませんでした
+query.results=結果:
+
+list.new.place=&7<座標を追加>
+entry.newplace=新規座標:
+entry.editplace=座標の編集:
+entry.usemylocation=<< 現在の座標を使う
+macro.mode.normal=通常マクロ
+macro.mode.keystate=キーマクロ
+macro.mode.conditional=条件付きマクロ
+
+macro.prompt.edit.simple=<編集するマクロのキーを押してください>
+macro.prompt.keydown=キーを押す
+macro.prompt.keyheld=キーを保持
+macro.prompt.keyup=キーを離す
+macro.prompt.repeatrate=リピート間隔 (ms)
+
+macro.help2.line1=キーマクロを使用すると、キーを&c押す&6、&c離す&6、&c保持する&6事により
+macro.help2.line2=実行するマクロを分けることができます。このマクロではパラメータを使用する
+macro.help2.line3=ことはできませんが、&c$$<file.txt>&6(ファイル読み込み)のみ使用できます。
+macro.help2.line4=スクリプトを書くことはできますが、&cWAIT&6や&cLOOP&6のような遅延を含む
+macro.help2.line5=機能はキーマクロ内で動作させることはできません。
+
+script.error.stack=不明なスタックと共に強制終了しました。スクリプトの構文をチェックしてください
+script.error.context=無効なコンテキストスイッチ
+script.error.stackoverflow=スタックのオーバーフロー
+
+options.option.alwaysgoback=マクロを編集後&bバインド&f画面に戻る
+options.option.optionsfirst=まず&bヘルプ&fではなく&bオプション&fを表示する
+options.option.simple=シンプルなGUIを使用する
+options.option.runstatus=マクロのステータス画面をオーバーライドする
+options.option.configs=コンフィグ設定
+options.option.configs.use=以下の設定を使用:
+options.option.configs.friends=フレンドリスト
+options.option.configs.homes=家のリスト
+options.option.configs.towns=街のリスト
+options.option.configs.warps=ワープ地点リスト
+options.option.configs.places=座標リスト
+options.option.configs.presets=テキストリスト
+options.option.commandwarplist=&bワープ地点リスト&f表示コマンド
+options.option.commandwarplist2=&bワープ地点リスト&f追加ページコマンド
+options.option.commandwarplist2help=&b%s &7でページの番号を指定できます
+options.option.advanced=上級者向け設定
+options.option.reserved=使用済みキーの編集
+
+param.prompt.warp=ワープ地点名を入力 <&e%s&c>
+list.new.warp=&7<ワープ地点の追加>
+entry.newwarp=新規ワープ地点:
+entry.editwarp=ワープ地点の編集:
+
+macro.option.inhibit.simple=ﾊﾟﾗﾒｰﾀ保存無し
+macro.option.global.simple=グローバル
+
+macro.hover.empty=&8<空のデータ>
+
+gui.options=オプションの設定
+
+options.option.directmode=スニークなしでメニューを開く
+options.option.compatibilitymode=最適化モード(再起動が必要です)
+options.option.disabledeepinject=ディープインジェクションを無効にする
+options.option.keyboardedit=キーボードのレイアウトを編集可能にする
+options.option.debug=デバッグ情報を有効化
+options.option.chathistory=ローカルの履歴を保存する
+
+entry.displayname=ディスプレイ名
+
+message.usingpack=&b[MACROS] &a%s &bリソースパックを使用します
+message.badpack=&b[MACROS] リソースパックの &a%s &bのマッチに失敗しました
+message.failedpack=&b[MACROS] &a%s&b リソースパックの読み込みに失敗しました。デフォルトに戻します
+
+script.error.nosign=&c看板がインベントリ内にありませんでした
+
+macro.help.always=競合するキーをオーバーライドしマクロの実行を強制するための設定
+macro.option.always=常に競合するキーをオーバーライドする
+macro.option.always.simple=強制ｵｰﾊﾞｰﾗｲﾄﾞ
+
+macro.hover.overlay=&a%s &fによってオーバーライドされています
+
+message.config=&b[MACROS] コンフィグ &a%s&b を使用します
+message.overlay.add=&b[MACROS] コンフィグ &a%s&b を読み込みました
+message.overlay.remove=&b[MACROS] コンフィグ &a%s&b を無効化しました
+
+tooltip.options=設定
+tooltip.editfile=テキストエディタ
+tooltip.icons=アイコンの管理
+tooltip.bind=キー設定の編集
+tooltip.guiedit=GUIの編集
+tooltip.perms=権限を見る
+
+macro.icons.title=アイコンマネージャー
+macro.icons.help=アイコンをクリックしてスクリーンショットを撮影
+macro.icons.town=街のアイコン:
+macro.icons.homes=家のアイコン:
+
+thumbnail.help.hint1=風景をフレームに合わせてマウスをクリック
+thumbnail.help.hint2=もしくはRETURNを押してアイコンを保存
+
+editor.title=テキストファイルの編集
+
+options.option.animation=GUIアニメーションを使う
+options.option.rememberpage=最後に使った&bマクロ設定&f画面を記憶
+
+macro.prompt.edit.event=<編集するイベントを選択してください>
+macro.prompt.edit.button=<編集するボタンを選択してください>
+macro.prompt.edit.buttons=<左クリックでマクロ設定、右クリックでプロパティを開きます>
+macro.prompt.edit.unknown=&4<ヘルプ文がありません>
+
+editor.rename.file=ファイル名の変更
+editor.rename.file.prompt=新しいファイル名を入力してください
+editor.savechanges=ファイルの変更を保存しますか？
+editor.title.minimise=エディタの最小化
+editor.prompt.minimise=エディタを最小化します
+editor.prompt.saveonmin=まずファイルを保存しますか？
+editor.prompt.remember=常にそうする
+
+firstrun.title=Macro / Keybind Mod が正常にインストールされました
+firstrun.line1=おめでとう！そして初めまして。￢
+firstrun.line2=&eMacro / Keybind Mod&6 は正常に読み込まれました。￢
+firstrun.line3=まずMinecraftの &e操作設定&6 にある &eキーのオーバーライド&6 と
+firstrun.line4=&eマクロの使用&6 キーを設定することが推奨されています。
+firstrun.line5=&eキーを設定する&6 をクリックすると設定画面に移ります。￢
+firstrun.line6=キーを再設定する際にはいつでもゲームメニューから
+firstrun.line7=&e設定&6 -> &e操作設定&6 を選んでください！
+firstrun.yes=キーを設定する
+firstrun.no=キャンセル
+
+options.option.largebuttons=&bマクロ設定&f画面のボタンを大きくする
+options.option.showslots=インベントリのスロットIDを表示する
+options.option.autoscale=&bマクロ設定&fのキーボードを画面いっぱいに拡大
+
+control.properties.title=%s のプロパティ
+control.properties.name=内部名
+control.properties.button.hide=マクロが未設定ならば隠す
+control.properties.button.text=表示名
+control.properties.button.sticky=クリックしてもGUIを閉じない
+control.properties.button.hotkey=ホットキー
+control.properties.slider.hotkeys=上下キー (+/-)
+
+control.delete.title=操作設定の消去
+control.delete.line1=以下を消去してもよろしいですか？
+
+grid.properties.title=グリッド設定
+grid.properties.rows=行
+grid.properties.cols=列
+grid.properties.colWidth=列の幅
+
+macro.prompt.condition=条件
+macro.prompt.condtrue=真ならば
+macro.prompt.condfalse=偽ならば
+
+macro.help3.line1=条件付きマクロを使うことで、特定の条件によってそれぞれ違うマクロを
+macro.help3.line2=実行させることができます。この条件はマクロがコンパイルされる&n前に&r
+macro.help3.line3=実行されるので、&cIF&6/&cELSE&6を使うよりもパワフルにマクロを実行できます。
+macro.help3.line4=さらに、それぞれ違うパラメータを持たせることもできます。
+macro.help3.line5=
+macro.help3.line6=条件付きマクロでは&cn通常&6マクロで使えるのと同じパラメータを
+macro.help3.line7=使うことができます。
+
+startuperrors.title=開始時にエラーを検出
+startuperrors.line1=&eMacro / Keybind Mod&6 が開始時に以下のエラーを検出しました￢
+
+options.option.extra=特別な設定
+options.option.chathidden=チャットを隠す
+
+control.properties.label.text=ラベル名
+control.properties.label.binding=バインディング
+control.properties.forecolour=文字色
+control.properties.backcolour=背景色
+
+control.properties.label.align=テキストの位置
+control.properties.label.align.topleft=左上
+control.properties.label.align.topcentre=上
+control.properties.label.align.topright=右上
+control.properties.label.align.middleleft=左
+control.properties.label.align.middlecentre=中央
+control.properties.label.align.middleright=右
+control.properties.label.align.bottomleft=左下
+control.properties.label.align.bottomcentre=下
+control.properties.label.align.bottomright=右下
+
+options.option.spamfilter=ログ溢れ対策設定
+options.option.spamfilter.enable=&bログ溢れ対策&fを有効にする 
+options.option.spamfilter.style=対策タイプ
+options.option.spamfilter.queuesize=最大行数
+
+options.option.override.popup=&bオーバーライド&f表示スタイル
+override.popup.style.normal=全て表示
+override.popup.style.mini=縮小表示
+override.popup.style.none=非表示
+
+time.now=今
+time.never=なし
+
+macro.permissions.title=権限
+macro.permissions.banner=最終更新: &f%s
+macro.permissions.script.title=拒否されたスクリプトコマンド
+macro.permissions.script.info1=以下のコマンドはサーバー権限により無効化されました:
+macro.permissions.option.scriptwarnings=コマンドが無効化されたとき警告する
+macro.permissions.gui.refresh=強制更新
+
+script.error.denied=%s はサーバーにより拒否されました。
+
+param.option.replaceall=全て置き換える
+editor.option.help=ヘルプを表示する
+
+control.properties.textarea.lifespan=表示時間
+options.option.textboxhighlight=テキストボックス内の文法ハイライトを有効化
+control.properties.text.shadow=影
+control.properties.text.border=枠
+
+options.option.spamfilter.ignorecommands=&b/ &fで始まるコマンドを無視する
+options.option.debounce=キートリガーのデバウンス対策をする
+
+control.properties.bar.expression=数式
+control.properties.bar.min=最小値
+control.properties.bar.max=最大値
+
+macro.trigger.type.keys=キー
+macro.trigger.type.events=イベント
+macro.trigger.type.control=GUI
+
+options.option.buttonsonchat=&bチャット&f画面でのボタン表示を許可する
+
+macro.prompt.edit.control=<左クリックで編集、右クリックでプロパティ>
+macro.prompt.list.sort=Sを押してリストをソート
+
+control.properties.bar.style=バーのスタイル
+control.properties.bar.style.horizontal=横方向
+control.properties.bar.style.vertical=縦方向
+control.properties.bar.expression=数式
+
+control.properties.bind=&e<キーを押す>
+control.properties.none=&6<キー無し>
+
+layout.editor.title=GUIエディタ
+
+layout.editor.new.button=ボタン
+layout.editor.new.textarea=テキストエリア
+layout.editor.new.label=ラベル
+layout.editor.new.progressbar=進捗バー
+layout.editor.new.slider=スライダー
+layout.editor.new.playbackstatus=マクロのステータス
+layout.editor.new.icon=アイコン
+layout.editor.new.layout=カスタムGUI
+
+layout.editor.grid=グリッドの調節
+
+layout.editor.slot=スロット
+layout.editor.screen=画面
+layout.editor.nobinding=GUIは設定されていません
+layout.editor.menu.create=画面の新規作成
+layout.editor.menu.reset=全画面を消去する
+layout.editor.menu.rename=画面名の設定
+layout.editor.help.line1=左にあるリストから画面をドラッグし、
+layout.editor.help.line2=GUIスロットを設定します。一つの画面を
+layout.editor.help.line3=複数のスロットに設定することができます。
+layout.editor.available=使用可能な画面
+layout.editor.assignments=画面の設定
+
+gui.exit=閉じる
+
+editor.rename.gui=画面名の変更
+editor.rename.gui.prompt=画面 &e%s&6 の新しい名前を入力してください
+
+layout.contextmenu.execute=マクロの実行
+layout.contextmenu.edit=マクロの編集
+layout.contextmenu.design=GUIの編集
+
+layout.delete.title=画面の消去
+layout.delete.line1=以下を消去してもよろしいですか？
+
+layout.options.loadatstartup=スロット設定を保存する
+
+editor.menu.min=エディタの最小化
+editor.menu.editother=他のファイルの編集
+editor.menu.reference=コマンドリファレンス
+
+reference.title=コマンドリファレンス
+reference.cmdlist=使用可能なコマンド
+reference.syntax=コマンドの文法
+reference.desc=説明
+reference.return=返り値
+reference.filtering=検索: &f%s
+reference.filterprompt=<検索するコマンドを入力してください>
+
+macro.inline.title=エディタ
+
+options.option.filterablechat=&bフィルタ可能チャット&fのGUIとイベントを有効化
+
+gui.link=リンク
+gui.unlink=リンク切断
+gui.disable=無効
+
+gui.key.disabled=無効
+
+options.option.mode.description=キー設定
+options.option.mode.normal=&b%s&r+&b%s
+options.option.mode.direct=&b%s
+options.option.mode.disabled=無効
+
+gui.bindings.goto=&eマクロ設定...
+
+options.option.gui=GUIのオプション
+options.option.debug.env=環境の表示 &c警告: 動作が不安定になります！
+options.option.debug.env.keys=環境デバッグにキー情報を追加する
+
+betaexpired.title=ベータ期間が終了しました。
+betaexpired.line1=ベータテストへのご協力ありがとうございました。￢
+betaexpired.line2=&eMacro / Keybind Mod&6 の新しいバージョン %s がダウンロード
+betaexpired.line3=出来るようになり、またこのリリースでは幾つかの危険な不具合の
+betaexpired.line4=修正を含む場合があります。￢
+betaexpired.line5=このベータバージョンを勿論使い続けることもできますが、
+betaexpired.line6=このメッセージはまた表示され、そしてあなたがここで見つけた
+betaexpired.line7=バグは、リリース版では既に直っている場合があります。
+
+macro.option.cmdref=ｺﾏﾝﾄﾞ ﾍﾙﾌﾟ
+
+script.error.missingpop=不明なスタックと共にスクリプトが強制終了しました: &e%s
+
+crafting.status.progress=%d個目を作成中...(目標:%d個)
+
+crafting.status.idle=停止
+crafting.status.waiting=待機中
+crafting.status.calculate=計算中
+crafting.status.waiting.inventory=インベントリ展開中...
+crafting.status.waiting.workbench=作業台待機中...
+crafting.status.opening.workbench=作業台展開中...
+crafting.status.crafting=作成中...
+crafting.status.cancelled=キャンセルされました
+crafting.status.done=完成！
+
+crafting.fail.general=オートクラフト失敗
+crafting.fail.unexpected=予期せぬエラー
+crafting.fail.norecipe=レシピが見つかりませんでした
+crafting.fail.timeout=タイムアウト
+crafting.fail.ingredients=アイテム不足
+crafting.fail.nogrid=クラフティング欄が使用不可
+crafting.fail.workbench=作業台が見つかりませんでした
+crafting.fail.nospace=インベントリがいっぱいです！
+crafting.fail.cancelled=キャンセルされました
+
+spamfilter.style.none=なし
+spamfilter.style.queue=行
+spamfilter.style.discard=破棄
+spamfilter.style.log=ログのみ
+
+control.properties.bordercolour=枠の色
+
+control.properties.playbackstatus.border=枠の描画
+control.properties.playbackstatus.border.none=なし
+control.properties.playbackstatus.border.interactive=マクロ実行時
+control.properties.playbackstatus.border.always=常時
+control.properties.playbackstatus.clip=内容のクリップ
+
+playback.status.label=マクロのステータス
+playback.idle=実行中のマクロはありません
+playback.more=%d 他...
+
+script.error.badchannel=&c無効なチャンネル名: &e%s
+script.error.nochannel=&cチャンネルが選択されていません
+
+menu.chatfilter.edit=チャットフィルタの編集
+
+patch.title=画面の新規作成
+patch.prompt=新しい画面の名前を入力してください
+
+script.error.badregex=&c%s において不適切な正規表現: &e%s
+script.error.badreplacement=&c%s において不適切な置換: &e%s
+
+control.properties.icon.icon=アイコン
+control.properties.icon.scale=大きさ (1-10)
+control.properties.icon.durability=耐久度
+control.properties.icon.align=アイコンの位置
+
+control.error.noicon=アイコン未設定
+control.error.badicon=無効なアイコン: &e%s
+
+control.properties.label.align.fill=全画面
+control.properties.layout.name=レイアウトID
+control.properties.layout.width=最大の幅
+control.properties.layout.height=最大の高さ
+control.properties.layout.align=GUIの場所
+control.properties.layout.help1=&e0 &6でオート、
+control.properties.layout.help2=又は&e%d&6以上の値
+
+gui.elipsis=...
+resources.browse.title=リソースを探す
+
+macro.config.setstartup=起動時にこれを使用する
+
+repl.title=対話型コンソール
+repl.message=&6対話型コンソールへようこそ！ &n試験中&r&6の機能だから、バグやクラッシュがあれば報告しよう！
+repl.ready=スクリプトを入力(区切り文字はなし) &aHELP&fコマンドでヘルプを表示
+
+repl.aborted=&c中止されました
+
+repl.error.message=&c%s
+repl.error.action=&cエラー: %s
+repl.error.unrecognised=&c不明な文: %s 
+repl.error.eval=&c数式がありません。&aHELP&cを使って有効なコマンドを確認してください
+
+repl.console.error.noaction=&f%s&c というアクションはありません
+
+repl.console.mode.append=&c+ &fスクリプトを入力 &eEND&fコマンドで終了:
+repl.console.mode.cancelled=&c入力がキャンセルされました
+repl.console.error.nobegin=&cエラー: &eBEGIN &cがない &eEND
+
+repl.console.command.help.usage=HELP [command]
+repl.console.command.help.help=指定されたコンソールコマンドのヘルプを表示します。
+repl.console.command.begin.usage=BEGIN
+repl.console.command.begin.help=複数行モードを開始します。ENDコマンドで終了します。
+repl.console.command.end.usage=END
+repl.console.command.end.help=複数行モードを終了し、スクリプトや計算を実行します。
+repl.console.command.cat.usage=CAT <file.txt>
+repl.console.command.cat.help=指定されたファイルの内容をコンソール画面に表示します。
+repl.console.command.cls.usage=CLS
+repl.console.command.cls.help=コンソール画面をクリアします。
+repl.console.command.edit.usage=EDIT <file.txt>
+repl.console.command.edit.help=エディタを開き、指定されたファイルを編集します。
+repl.console.command.exit.usage=EXIT
+repl.console.command.exit.help=コンソール画面を閉じます。
+repl.console.command.list.usage=LIST
+repl.console.command.list.help=マクロファイルの一覧を表示します。
+repl.console.command.live.usage=LIVE [on|off]
+repl.console.command.live.help="ライブモード"を有効/無効にします。ライブモードを有効にすると、コマンドがチャットとしてサーバーに送信され、受信したチャットがコンソール画面に表示されるようになります。ライブモードを無効(デフォルト)にすると、このコンソールはサンドボックスのように動作するようになり、メッセージはコンソール内のみに表示されます。
+repl.console.command.run.usage=RUN <file.txt> [arg1] [arg2] [more args...
+repl.console.command.run.help=指定されたスクリプトを同期的に実行します。引数はEXECコマンドで実行するのと同様に渡されます。(例) params $$[1], $$[2].. etc
+repl.console.command.rm.usage=RM <file.txt>
+repl.console.command.rm.help=指定されたファイルを消去します。
+repl.console.command.say.usage=SAY <message>
+repl.console.command.say.help=チャットとしてメッセージが送信されますが、サーバーに送信されるのはライブモードの時だけです。
+repl.console.command.tasks.usage=TASKS
+repl.console.command.tasks.help=現在実行中のタスクを表示します。
+repl.console.command.whoami.usage=WHOAMI
+repl.console.command.whoami.help=今のユーザー名を表示します。
+repl.console.command.version.usage=VERSION
+repl.console.command.version.help=今のバージョンを表示します。
+
+repl.console.help.actions=&e有効なスクリプトアクション:
+repl.console.help.commands=&e有効なコンソールコマンド:
+repl.console.help.eval=&e計算の例:
+repl.console.help.eval.example1=&6変数や定数の展開: &d? %TIME% &6or &d?% TIME
+repl.console.help.eval.example2=&6計算: &d?= 6 + 3 
+
+repl.console.list.message=&eファイル一覧:
+repl.console.list.summary=&a%d &e個のファイルが見つかりました
+
+repl.console.live.enabled=&eライブモードが&a有効&eになりました。チャットの出力がサーバーに送信されます
+repl.console.live.disabled=&eライブモードが&c無効&eになりました。チャットの出力はサーバーに送信されません
+repl.console.live.cmdfailed=&cコマンドが送信されませんでした。&eライブモード&cが&l無効&r&cになっています。&aLIVE&cコマンドでライブモードを有効にします
+
+repl.console.run.badfile=&c無効なファイル名: &f%s
+repl.console.run.nofile=&cファイルが見つかりませんでした: &f%s
+repl.console.run.compile=&f%s &aをコンパイル中...
+repl.console.run.run=&f%s &aを実行中...
+repl.console.run.cancelled=&cキャンセルされました
+
+repl.console.rm.prompt=&6<&f%s&6>を消去してもよろしいですか？ (&fy&6/&fn&6)? &e
+repl.console.rm.done=&c%s を消去しました
+
+repl.console.tasks.line=&apid&f=&a%s &6name&f=&6%s &dtime&f=&d%.3f
+
+repl.return.value=&7%s
+repl.return.array.start=&d配列 [
+repl.return.array.entry=&a  %d &d-> &7%s
+repl.return.array.end=&d]
+repl.return.void=&7<void>
+repl.return.chat=&f[&a%s&f] -> &e%s
+repl.return.log=&b%s
+repl.return.logto=&a<%s> %s
+
+script.error.stackhint=&e%S &cには &d%s &cが続く必要があります
+
+gui.context.execute=マクロの実行
+gui.context.edit=マクロの編集
+gui.context.properties=プロパティ
+
+editor.menu.colours=色のテーマを変える
+
+options.option.ignorepage=全&bマクロ設定一覧&f画面でキー設定のキーを取得
+
+grid.colsize.auto=\&8自動
+
+layout.editor.menu.export=画面のエクスポート
+layout.editor.export.title=画面のエクスポート
+layout.editor.export.prompt=出力する画面のファイル名を入力してください
+layout.editor.export.overwrite.title=上書きの確認
+layout.editor.export.overwrite.prompt=以下のファイルを上書きしてもよろしいですか？
+
+layout.editor.menu.import=ファイルから画面をインポート
+patch.create.label.name=画面名
+patch.create.label.display=表示名
+patch.create.exists=&c'%s' という名前の画面は既に存在しています
+patch.import.title=画面のインポート
+patch.import.name.title=画面のインポート
+patch.import.name.prompt=新しい画面のIDと表示名を入力してください
+
+key.macro_repl=コンソール
+
+repl.console.tasks.line=&aid&f=&6%s &aname&f=&6%s &atime&f=&6%s
+repl.console.tasks.summary=&a%d &e個の実行中のタスク(s)
+
+repl.console.kill.term=&cタスク &6%s &cを終了しました
+
+repl.console.command.shutdown.usage=SHUTDOWN
+repl.console.command.shutdown.help=Minecraftを終了します
+
+repl.console.command.kill.usage=KILL <id>
+repl.console.command.kill.help=現在実行中の指定されたIDのタスクを終了します。現在実行中のタスクを確認するには&atasks&6コマンドを利用してください

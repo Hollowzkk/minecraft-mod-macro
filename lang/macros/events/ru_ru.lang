@@ -1,0 +1,149 @@
+macro.help.event.line3=Вы редактируете &cмакрос события&6. Этот тип макросов не принимает 
+macro.help.event.line4=параметры от пользователя. Вы можете подключить файл, используя&c $$<file.txt>
+macro.help.event.line5=или заключить скрипты в &c$${&6 и &c}$$&6¬
+
+# Event 1000 (onJoinGame)
+
+macro.help.event.onjoingame.line[0]=&f<onJoinGame>
+macro.help.event.onjoingame.line[1]=Событие срабатывает при входе в игру(Синглплеер или
+macro.help.event.onjoingame.line[2]=Мультиплеер) и используется для запуска фоновых макросов
+macro.help.event.onjoingame.line[3]=или выполнения команд при входе на сервер.
+
+# Event 1001 (onChat)
+
+macro.help.event.onchat.line[0]=&f<onChat>
+macro.help.event.onchat.line[1]=Событие срабатывает при получении нового сообщения в чате.
+macro.help.event.onchat.line[2]=Вы можете получить доступ к последнему сообщению, используя
+macro.help.event.onchat.line[3]=переменную &cCHAT&6.
+
+# Event 1002 (onHealthChange)
+
+macro.help.event.onhealthchange.line[0]=&f<onHealthChange>
+macro.help.event.onhealthchange.line[1]=Событие срабатывает при изменении уровня здоровья, например
+macro.help.event.onhealthchange.line[2]=при получении урона или лечении. Каждое сердце содержит
+macro.help.event.onhealthchange.line[3]=2 единицы здоровья, а максимальное кол-во единиц 20. Вы
+macro.help.event.onhealthchange.line[4]=можете получить текущий уровень здоровья с помощью
+macro.help.event.onhealthchange.line[5]=глобальной переменной &cHEALTH&6.
+
+# Event 1003 (onFoodChange)
+
+macro.help.event.onfoodchange.line[0]=&f<onFoodChange>
+macro.help.event.onfoodchange.line[1]=Событие срабатывает при изменении уровня голода. Каждая
+macro.help.event.onfoodchange.line[2]=иконка голода составляет 2 единицы голода, а максимально кол-во
+macro.help.event.onfoodchange.line[3]=единиц 20. Вы можете получить текущий уровень здоровья с помощью
+macro.help.event.onfoodchange.line[4]=глобальной переменной &cHUNGER&6.
+
+# Event 1004 (onArmourChange)
+
+macro.help.event.onarmourchange.line[0]=&f<onArmourChange>
+macro.help.event.onarmourchange.line[1]=Событие срабатывает при изменении уровня брони, например при
+macro.help.event.onarmourchange.line[2]=получении урона или надевании брони на себя. Каждая иконка брони
+macro.help.event.onarmourchange.line[3]=составляет 2 единицы брони, а максимально кол-во единиц 20. Вы можете
+macro.help.event.onarmourchange.line[4]=получить текущий уровень брони с помощью глобальной переменной &cARMOUR&6.
+
+# Event 1005 (onWorldChange)
+
+macro.help.event.onworldchange.line[0]=&f<onWorldChange>
+macro.help.event.onworldchange.line[1]=Событие срабатывает при изменении мира, например при путишествии
+macro.help.event.onworldchange.line[2]=между мирами на серверах с мульти-мирами или путешествии
+macro.help.event.onworldchange.line[3]=между Обычным, Нижним миром или Краем.
+
+# Event 1006 (onModeChange)
+
+macro.help.event.onmodechange.line[0]=&f<onModeChange>
+macro.help.event.onmodechange.line[1]=Событие срабатывает при изменении режима, например
+macro.help.event.onmodechange.line[2]=при переключении между режимом выживания или творческим режимом.
+
+# Event 1007 (onInventorySlotChange)
+
+macro.help.event.oninventoryslotchange.line[0]=&f<onInventorySlotChange>
+macro.help.event.oninventoryslotchange.line[1]=Событие срабатывает при изменении выбранного слота в инвентаре.
+macro.help.event.oninventoryslotchange.line[2]=Предыдущий слот можно получить, используя переменную
+macro.help.event.oninventoryslotchange.line[3]=&cOLDINVSLOT&6 с данного события.
+
+# Event 1008 (onOxygenChange)
+
+macro.help.event.onoxygenchange.line[0]=&f<onOxygenChange>
+macro.help.event.onoxygenchange.line[1]=Событие срабатывает при изменении уровня кислорода. Уровень кислорода
+macro.help.event.onoxygenchange.line[2]=показывает кол-во тиков, которые вы можете дышать под водой
+macro.help.event.onoxygenchange.line[3]=прежде, чем задыхаться. Вы можете получить текущий уровень кислорода 
+macro.help.event.onoxygenchange.line[4]=с помощью глобальной переменной &cOXYGEN&6.
+
+# Event 1009 (onXPChange)
+
+macro.help.event.onxpchange.line[0]=&f<onXPChange>
+macro.help.event.onxpchange.line[1]=Событие срабатывает при изменении количества опыта. Вы можете
+macro.help.event.onxpchange.line[2]=получить текущий уровень опыта с помощью глобальных переменных 
+macro.help.event.onxpchange.line[3]=&cTOTALXP&6 и &cXP&6.
+
+# Event 1010 (onLevelChange)
+
+macro.help.event.onlevelchange.line[0]=&f<onLevelChange>
+macro.help.event.onlevelchange.line[1]=Событие срабатывает при изменении вашего уровня.Вы можете
+macro.help.event.onlevelchange.line[2]=получить текущий уровень с помощью глобальной переменной &cLEVEL&6.
+
+# Event 1011 (onItemDurabilityChange)
+
+macro.help.event.onitemdurabilitychange.line[0]=&f<onItemDurabilityChange>
+macro.help.event.onitemdurabilitychange.line[1]=Событие срабатывает при изменении уровня прочности выбранного 
+macro.help.event.onitemdurabilitychange.line[2]=предмета. Вы можете получить текущую 
+macro.help.event.onitemdurabilitychange.line[3]=прочность предмета с помощью переменной 
+macro.help.event.onitemdurabilitychange.line[4]=&cDURABILITY&6.
+
+# Event 1012 (onWeatherChange)
+
+macro.help.event.onweatherchange.line[0]=&f<onWeatherChange>
+macro.help.event.onweatherchange.line[1]=Событие срабатывает при изменении погоды.
+macro.help.event.onweatherchange.line[2]=Вы можете получить текущую силу дождя с помощью глобальной
+macro.help.event.onweatherchange.line[3]=переменной &cRAIN&6.
+
+# Event 1013 (onPickupItem)
+
+macro.help.event.onpickupitem.line[0]=&f<onPickupItem>
+macro.help.event.onpickupitem.line[1]=Событие срабатывает, когды вы поднимаете предмет. Вы можете получить
+macro.help.event.onpickupitem.line[2]=id поднятого предмета с помощью переменной &cPICKUPID&6,
+macro.help.event.onpickupitem.line[3]=имя поднятого предмета с помощью переменной &cPICKUPITEM&6
+macro.help.event.onpickupitem.line[4]=и количество поднятых предметов с помощью переменной &cPICKUPAMOUNT&6.
+
+# Event 1014 (onPlayerJoined)
+
+macro.help.event.onplayerjoined.line[0]=&f<onPlayerJoined>
+macro.help.event.onplayerjoined.line[1]=Событие срабатывает, когда любой игрок заходит на сервер.
+macro.help.event.onplayerjoined.line[2]=Вы можете узнать ник игрока используя переменную
+macro.help.event.onplayerjoined.line[3]=&cJOINEDPLAYER&6 в этом событии.
+
+# Event 1015 (onShowGui)
+
+macro.help.event.onshowgui.line[0]=&f<onShowGui>
+macro.help.event.onshowgui.line[1]=Событие срабатывает при изменении GUI. Вы можете
+macro.help.event.onshowgui.line[2]=узнать имя текущего GUI с помощью глобальной переменной
+macro.help.event.onshowgui.line[3]=&cGUI&6, переменная возвращает "NONE", когда в данный момент
+macro.help.event.onshowgui.line[4]=не отображается GUI.
+
+# Event 1016 (onArmourDurabilityChange)
+
+macro.help.event.onarmourdurabilitychange.line[0]=&f<onArmourDurabilityChange>
+macro.help.event.onarmourdurabilitychange.line[1]=Событие срабатывает при изменении уровня прочности любой брони.
+
+# Event 1017 (onAutoCraftingComplete)
+
+macro.help.event.onautocraftingcomplete.line[0]=&f<onAutoCraftingComplete>
+macro.help.event.onautocraftingcomplete.line[1]=Событие срабатывает, когда процесс авто-крафтинга завершается.
+macro.help.event.onautocraftingcomplete.line[2]=Цель для крафтинга по завершению можно узнать с помощью переменной
+macro.help.event.onautocraftingcomplete.line[3]=&cREASON&6 в этом событии.
+
+# Event 1018 (onConfigChange)
+
+macro.help.event.onconfigchange.line[0]=&f<onConfigChange>
+macro.help.event.onconfigchange.line[1]=Событие срабатывает при изменении конфигурации.
+macro.help.event.onconfigchange.line[2]=Имя новой конфигурации можно узнать с помощью переменной &cCONFIG
+macro.help.event.onconfigchange.line[3]=в этом событии. &c&lОбратите внимание на то, что это событие будет
+macro.help.event.onconfigchange.line[4]=&c&lсрабатывать в &nновой&r &c&lконфигурации, а &nне в старой!
+
+# Event 1020 (onSendChatMessage)
+
+macro.help.event.onsendchatmessage.line[0]=&f<onSendChatMessage>
+macro.help.event.onsendchatmessage.line[1]=Событие срабатывает при получении в чате нового сообщения.
+macro.help.event.onsendchatmessage.line[2]=Вы можете получить доступ к этому сообщению с помощью
+macro.help.event.onsendchatmessage.line[3]=переменной &cCHAT&6 в этом событии.
+

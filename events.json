@@ -1,0 +1,9 @@
+{
+    "accessors":
+    [
+        "net.eq2online.macros.core.overlays.IGuiContainer",
+        "net.eq2online.macros.core.overlays.IGuiContainerCreative",
+        "net.eq2online.macros.core.overlays.IContainerCreative"
+    ],
+    "events": []
+}

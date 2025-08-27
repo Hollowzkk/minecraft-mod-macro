@@ -1,0 +1,202 @@
+## To make this language pack working properly, make sure that text format is "UTF-8 without BOM"
+
+message.enabledsp=&b[MACROS] Obsługa makr włączona!
+message.autosp=&b[MACROS] Używana konfiguracja: &a%s
+message.automp=&b[MACROS] Używana konfiguracja dla serwerów: &a%s
+
+options.title=Ustawienia makr
+options.selectconfig=Wybierz konfigurację
+options.option.title=Opcje
+options.option.general=Ustawienia ogólne
+options.option.enableoverride=Wlacz funkcję&b nadpisywania makr&f
+options.option.enableautoswitch=Automatycznie zmieniaj
+options.option.discovery=Ustawienia wykrywania lokalizacji
+options.option.waitforhomecount=Poczekaj na policzenie domów (wiarygodniejsze)
+options.option.commandhomelist=Komenda &blisty domów
+options.option.commandtownlist=Komenda &blisty miast
+options.newconfig.title=Dodaj konfigurację
+options.newconfig.prompt=Podaj nazwę nowej konfiguracji
+options.newconfig.prompt2=Użyj IP aktualnego serwera
+options.newconfig.option=Skopiuj aktualną konfigurację
+options.defaultconfig=Domyślna konfiguracja
+options.addconfig=&7<Dodaj konfigurację>
+
+gui.auto=Auto
+gui.add=Dodaj
+gui.save=Zapisz
+gui.yes=Tak
+gui.no=Nie
+gui.ok=OK
+gui.cancel=Anuluj
+gui.create=Utwórz
+gui.icon=Ikona
+gui.copy=Kopiuj
+gui.move=Przenieś
+gui.delete=Usuń
+gui.edit=Edytuj
+gui.importall=<< Importuj wszystko
+gui.refresh=Odswież
+
+macro.bind.title=Wiązania makr
+macro.edit.title=Edytuj makro
+macro.currentconfig=Konfiguracja: &f%s
+macro.config.global=Wszystkie konfiguracje
+macro.prompt.execute=<Wciśnij klawisz makra by wykonać>
+macro.prompt.edit=<Wciśnij klawisz makra by edytować lub kliknij na przycisk niżej>
+macro.prompt.bind=Edytuj wiązanie makra &f%s
+macro.keyname.control=Ctrl
+macro.keyname.alt=Alt
+macro.keyname.shift=Shift
+macro.option.title=Opcje
+macro.option.inhibit=Nie pamiętam parametrów
+macro.option.global=Zastosuj do wszystkich konfiguracji
+macro.action.title=Akcje
+macro.action.editfile=Edytuj plik...
+macro.help.title=Pomoc
+macro.help.line1=Wpisz makro poniżej, oddziel osobne komendy znakiem "|"
+macro.help.line2=np.&c /give Gracz 123|/give Gracz 456̍
+macro.help.line3=Użyj&c $$<plik.txt> &6by dodać plik makr lub&c $$m &6by zapytać o plik.
+macro.help.line4=Użyj&c $$? &6or&c $$[nazwa] &6by zapytać o wartosć.
+macro.help.line12=Sprawdź modyfikatory, które chcesz zastosować do tego makro
+macro.help.line13=Makra zostaną wykonane tylko, gdy przytrzymasz
+macro.help.line14=określone klawisze
+macro.help.inhibit=By zapobiec przypominaniu parametrów za każdym razem
+macro.help.global=By użyc makro do wszystkich konfiguracji
+
+param.prompt.param=Wpisz parametr &e%s&c dla <&e%s&c>
+param.prompt.inner=Wpisz %s wewnątrz parametru &e%s&c dla <&e%s&c>
+param.prompt.named=Wpisz nazwany parametr dla <&e%s&c>
+param.prompt.item=Wpisz ID przedmiotu dla <&e%s&c>
+param.prompt.town=Wpisz nazwę miasta dla <&e%s&c>
+param.prompt.home=Wpisz nazwę domu dla <&e%s&c>
+param.prompt.person=Wpisz nazwę %s dla <&e%s&c>
+param.prompt.friend=przyjaciel
+param.prompt.user=użytkownik
+
+param.action.confirmdelete=Jesteś pewien usunięcia
+param.action.confirmdeletefile=Jesteś pewien usunięcia tego pliku
+
+list.new.file=&7<Nowy plik>
+list.new.friend=&7<Nowy przyjaciel>
+list.new.home=&7<Nowy dom>
+list.new.town=&7<Nowe miasto>
+list.new.preset=&7<Dodaj nowe pole tekstowe>
+list.prompt.preset=Wpisz trochę tekstu
+
+editor.choosefile=Wybierz plik do zmodyfikowania:
+editor.createnewfile=Wybierz nowy plik:
+editor.editing=Edytowanie %s
+
+entry.newentry=Nowe wprowadzenie:
+entry.newfriend=Nowy przyjaciel:
+entry.newtown=Nowe miasto:
+entry.newhome=Nowy dom:
+entry.newfile=Nowy plik:
+entry.editentry=Edytuj wprowadzenie:
+entry.editfriend=Edytuj przyjaciela:
+entry.edittown=Edytuj miasto:
+entry.editgome=Edytuj dom:
+entry.chooseicon=Wybierz ikonę:
+
+query.wait=Wysyłanie zapytań do serwera...
+query.failed=Zapytanie zwrócilo brak wyników
+query.results=Zapytanie zwróciło:
+
+list.new.place=&7<Dodaj miejsce>
+entry.newplace=Nowe miejsce:
+entry.editplace=Edytuj miejsce:
+entry.usemylocation=<< Użyj aktualnych koordynatów
+macro.mode.normal=Zwykłe makro
+macro.mode.keystate=Status klawisza
+
+macro.prompt.edit.simple=<Wciśnij klawisz makro by edytować>
+macro.prompt.keydown=Wciśniety
+macro.prompt.keyheld=Przytrzymany
+macro.prompt.keyup=Niewciśniety
+macro.prompt.repeatrate=Opóźnienie powtarzania (ms)
+
+macro.help2.line1=Makra statusu klawisza pozwalają na przypisanie osobnych makr dla 
+macro.help2.line2=&cwciśniętego&6, &cprzytrzymanego&6 oraz &cupuszczonego&6 klawisza. Nie możesz używac parametrów
+macro.help2.line3=w tym rodzaju makra lecz możesz dodac pliki przy pomocy &c$$<plik.txt>.̍
+macro.help2.line4=Możesz dodać skrypty do makr, lecz funkcje takie, jak &cWAIT&6
+macro.help2.line5=czy &cLOOP&6 nie będą działać przy przytrzymanym klawiszu.
+
+script.error.stack=Skrypt zatrzymany przy nieupadłym stosie, sprawdź składnię skryptu
+script.error.context=Błędne przełączenie kontekstu w skrypcie
+script.error.stackoverflow=Przepełnienie stosu w skrypcie
+
+options.option.alwaysgoback=Wróć do ekranu wiązań
+options.option.optionsfirst=Pokaż opcje przed pomocą
+options.option.simple=Użyj prostego GUI
+options.option.runstatus=Zmiana ekranu pokazuje status makr
+options.option.configs=Ustawienia konfiguracji
+options.option.configs.use=Użyj ustawień osobnych dla:
+options.option.configs.friends=Listy przyjaciół
+options.option.configs.homes=Listy domów
+options.option.configs.towns=Listy miast
+options.option.configs.warps=Listy warpów
+options.option.configs.places=Listy miejsc
+options.option.configs.presets=Listy presetów
+options.option.commandwarplist=Komenda &bListy warpów
+options.option.commandwarplist2=Komenda dodatkowych stron &bListy warpów
+options.option.commandwarplist2help=&7Użyj &b%s &7dla numeru strony
+options.option.advanced=Ustawienia zaawansowane
+options.option.reserved=Edytuj klawisze zarezerwowane
+
+param.prompt.warp=Wpisz nazwę warpu dla <&e%s&c>
+list.new.warp=&7<Dodaj warp>
+entry.newwarp=Nowy warp:
+entry.editwarp=Edytuj warp:
+
+macro.option.inhibit.simple=Brak parametrów
+macro.option.global.simple=Ogólne
+
+macro.hover.empty=&8<Puste>
+
+gui.options=Zmień opcje...
+
+macro.help.line5=Użyj &c$$0&6-&c$$9 &6by zapytać o zaprogramowany tekst
+macro.help.line6=Użyj &c$$i &6by zapytać o item, &c$$i:d &6dla itemu z subwartością (np. 35:&e13&6)
+macro.help.line7=Użyj &c$$t &6by zapytać o miasto, &c$$w &6by zapytać o warpa
+macro.help.line8=Użyj &c$$f &6by zapytać o przyjaciela, &c$$u &6by zapytać o użytkownika online
+macro.help.line9=Użyj &c$$h &6by zapytać o dom, &c$$p &6by zapytać o miejsce (koordy)
+macro.help.line10=Użyj &c$$! &6by zakończyć makro i zostawić kursor na miejscu
+macro.help.line11=Załącz skrypty w &c$${&6 i &c}$$&6
+
+options.option.directmode=Dostęp do menu bindów bez klawisza &bskradania
+options.option.compatibilitymode=Tryb kompatybilności (wymagany restart gry)
+options.option.keyboardedit=Elastyczny układ klawiatury
+options.option.debug=Włącz informacje debugowania
+
+entry.displayname=Nazwa wyświetlana
+
+message.usingpack=&b[MACROS] Używanie paczki tekstur &a%s
+message.badpack=&b[MACROS] Błąd w dopasowywaniu paczki tekstur dla &a%s
+message.failedpack=&b[MACROS] Błąd w ładowaniu paczki tekstur dla &a%s&b. Powrót do domyślnego.
+
+script.error.nosign=&cNie masz tabliczki w Twoim inwentarzu
+
+macro.help.always=By wymusić makro do nadpisania kolidujących wiązań klawiszy
+macro.option.always=Zawsze nadpisuj
+macro.option.always.simple=Narzucaj Ovr
+
+macro.hover.overlay=Już nadpisane przez &a%s
+
+message.config=&b[MACROS] Używanie konfiguracji &a%s
+message.overlay.add=&b[MACROS] Importowana konfiguracja &a%s
+message.overlay.remove=&b[MACROS] Wyłączona importowana konfiguracja &a%s
+
+tooltip.options=Ustawienia
+tooltip.editfile=Edytor tekstu
+tooltip.icons=Zarządzaj ikonami
+tooltip.bind=Edytuj wiązania klawiszy
+
+macro.icons.title=Menedżer ikon
+macro.icons.help=Kliknij ikonę by wykonać zrzut ekranu
+macro.icons.town=Ikony miast:
+macro.icons.homes=Ikony domów:
+
+thumbnail.help.hint1=Opraw miniaturę poiniżej, potem kliknij myszkę
+thumbnail.help.hint2=lub wciśnij ENTER by zapisać miniaturę.
+
+editor.title=Edytuj plik tekstowy

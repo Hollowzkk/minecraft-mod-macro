@@ -1,0 +1,151 @@
+macro.help.event.line3=You are editing an &cevent macro&6. This type of macro cannot accept
+macro.help.event.line4=parameters from the user. You can include files using&c $$<file.txt>
+macro.help.event.line5=or enclose scripts within &c$${&6 and &c}$$&6¬
+
+# Event 1000 (onJoinGame)
+
+macro.help.event.onjoingame.line[0]=&f<onJoinGame>
+macro.help.event.onjoingame.line[1]=This event is raised whenever you join a game (single player or
+macro.help.event.onjoingame.line[2]=SMP) and can be used to start background macros or issue
+macro.help.event.onjoingame.line[3]=server commands when joining a new game.
+
+# Event 1001 (onChat)
+
+macro.help.event.onchat.line[0]=&f<onChat>
+macro.help.event.onchat.line[1]=This event is raised whenever a new chat message arrives from
+macro.help.event.onchat.line[2]=the server. You can access the message that was received using
+macro.help.event.onchat.line[3]=the &cCHAT&6 variable within the event.
+
+# Event 1002 (onHealthChange)
+
+macro.help.event.onhealthchange.line[0]=&f<onHealthChange>
+macro.help.event.onhealthchange.line[1]=This event is raised whenever your health level changes eg. when
+macro.help.event.onhealthchange.line[2]=you take damage or receive health from food or potions. Each
+macro.help.event.onhealthchange.line[3]=heart represents 2 health points so the maximum health is 20. You
+macro.help.event.onhealthchange.line[4]=can access the current level using the &cHEALTH&6 global variable.
+
+# Event 1003 (onFoodChange)
+
+macro.help.event.onfoodchange.line[0]=&f<onFoodChange>
+macro.help.event.onfoodchange.line[1]=This event is raised whenever your food bar level changes. Each
+macro.help.event.onfoodchange.line[2]=food icon represents 2 food points so the maximum food level
+macro.help.event.onfoodchange.line[3]=is 20. You can access the current food level using the &cHUNGER
+macro.help.event.onfoodchange.line[4]=global variable.
+
+# Event 1004 (onArmourChange)
+
+macro.help.event.onarmourchange.line[0]=&f<onArmourChange>
+macro.help.event.onarmourchange.line[1]=Raised whenever your armour level changes, for example when you
+macro.help.event.onarmourchange.line[2]=take damage or put on a new piece of armour. Each armour icon
+macro.help.event.onarmourchange.line[3]=represents 2 armour points so the maximum armour level is 20.
+macro.help.event.onarmourchange.line[4]=Get the current armour level using the &cARMOUR&6 global variable.
+
+# Event 1005 (onWorldChange)
+
+macro.help.event.onworldchange.line[0]=&f<onWorldChange>
+macro.help.event.onworldchange.line[1]=This event is raised when the world changes, for example when
+macro.help.event.onworldchange.line[2]=travelling between worlds in multi-world servers or travelling
+macro.help.event.onworldchange.line[3]=between Surface, Nether and End.
+
+# Event 1006 (onModeChange)
+
+macro.help.event.onmodechange.line[0]=&f<onModeChange>
+macro.help.event.onmodechange.line[1]=This event is raised when your game mode changes, for example
+macro.help.event.onmodechange.line[2]=when switching from creative to survival.
+
+# Event 1007 (onInventorySlotChange)
+
+macro.help.event.oninventoryslotchange.line[0]=&f<onInventorySlotChange>
+macro.help.event.oninventoryslotchange.line[1]=This event is raised when the selected inventory slot is changed.
+macro.help.event.oninventoryslotchange.line[2]=The previously-selected slot can be accessed using the
+macro.help.event.oninventoryslotchange.line[3]=&cOLDINVSLOT&6 variable within the event.
+
+# Event 1008 (onOxygenChange)
+
+macro.help.event.onoxygenchange.line[0]=&f<onOxygenChange>
+macro.help.event.onoxygenchange.line[1]=This event is raised when your oxygen level changes. The oxygen
+macro.help.event.onoxygenchange.line[2]=level represents the number of ticks that you can breathe
+macro.help.event.onoxygenchange.line[3]=underwater before beginning to drown and the current level can
+macro.help.event.onoxygenchange.line[4]=be accessed using the &cOXYGEN&6 global variable.
+
+# Event 1009 (onXPChange)
+
+macro.help.event.onxpchange.line[0]=&f<onXPChange>
+macro.help.event.onxpchange.line[1]=This event is raised when your experience level changes. You
+macro.help.event.onxpchange.line[2]=can access the current XP level using the &cTOTALXP&6 and &cXP&6
+macro.help.event.onxpchange.line[3]=global variables.
+
+# Event 1010 (onLevelChange)
+
+macro.help.event.onlevelchange.line[0]=&f<onLevelChange>
+macro.help.event.onlevelchange.line[1]=This event is raised when your level changes, you can access
+macro.help.event.onlevelchange.line[2]=the current level using the &cLEVEL&6 global variable.
+
+# Event 1011 (onItemDurabilityChange)
+
+macro.help.event.onitemdurabilitychange.line[0]=&f<onItemDurabilityChange>
+macro.help.event.onitemdurabilitychange.line[1]=This event is raised when the currently-wielded item's durability
+macro.help.event.onitemdurabilitychange.line[2]=level changes. Different items have different durability amounts
+macro.help.event.onitemdurabilitychange.line[3]=and change durability at different times. You can access the
+macro.help.event.onitemdurabilitychange.line[4]=level of the current item using the &cDURABILITY&6 variable.
+
+# Event 1012 (onWeatherChange)
+
+macro.help.event.onweatherchange.line[0]=&f<onWeatherChange>
+macro.help.event.onweatherchange.line[1]=This event is raised when the current weather level changes.
+macro.help.event.onweatherchange.line[2]=You can access the current rain strength using the &cRAIN&6
+macro.help.event.onweatherchange.line[3]=global variable.
+
+# Event 1013 (onPickupItem)
+
+macro.help.event.onpickupitem.line[0]=&f<onPickupItem>
+macro.help.event.onpickupitem.line[1]=This event is raised when an item is picked up by the player.
+macro.help.event.onpickupitem.line[2]=You can access the item id of the collected item using the
+macro.help.event.onpickupitem.line[3]=&cPICKUPID&6 variable, the name of the collected item using the
+macro.help.event.onpickupitem.line[4]=&cPICKUPITEM&6 variable, and the number of items collected
+macro.help.event.onpickupitem.line[5]=using the &cPICKUPAMOUNT&6 variable within the event.
+
+# Event 1014 (onPlayerJoined)
+
+macro.help.event.onplayerjoined.line[0]=&f<onPlayerJoined>
+macro.help.event.onplayerjoined.line[1]=This event is raised when a new player joins the server in a
+macro.help.event.onplayerjoined.line[2]=multiplayer game. You can access the name of the new player
+macro.help.event.onplayerjoined.line[3]=using the &cJOINEDPLAYER&6 variable within the event.
+
+# Event 1015 (onShowGui)
+
+macro.help.event.onshowgui.line[0]=&f<onShowGui>
+macro.help.event.onshowgui.line[1]=This event is raised when the current Minecraft GUI changes. You
+macro.help.event.onshowgui.line[2]=can access the class name of displayed GUI using the &cGUI&6
+macro.help.event.onshowgui.line[3]=global variable, the variable is set to "NONE" when no GUI is
+macro.help.event.onshowgui.line[4]=currently displayed.
+
+# Event 1016 (onArmourDurabilityChange)
+
+macro.help.event.onarmourdurabilitychange.line[0]=&f<onArmourDurabilityChange>
+macro.help.event.onarmourdurabilitychange.line[1]=This event is raised when any currently-worn armour durability
+macro.help.event.onarmourdurabilitychange.line[2]=level changes. Different items have different durability amounts
+macro.help.event.onarmourdurabilitychange.line[3]=and change durability at different times.
+
+# Event 1017 (onAutoCraftingComplete)
+
+macro.help.event.onautocraftingcomplete.line[0]=&f<onAutoCraftingComplete>
+macro.help.event.onautocraftingcomplete.line[1]=This event is raised when an auto-crafting process is completed.
+macro.help.event.onautocraftingcomplete.line[2]=The reason for crafting being completed can be accessed
+macro.help.event.onautocraftingcomplete.line[3]=through the &cREASON&6 variable within the event.
+
+# Event 1018 (onConfigChange)
+
+macro.help.event.onconfigchange.line[0]=&f<onConfigChange>
+macro.help.event.onconfigchange.line[1]=This event is raised when the active configuration is changed.
+macro.help.event.onconfigchange.line[2]=The name of the new configuration is available via the &cCONFIG
+macro.help.event.onconfigchange.line[3]=variable within the event. &c&lNote that this event will be
+macro.help.event.onconfigchange.line[4]=&c&lraised in the &nnew&r &c&lconfig &nnot the old one!
+
+# Event 1020 (onSendChatMessage)
+
+macro.help.event.onsendchatmessage.line[0]=&f<onSendChatMessage>
+macro.help.event.onsendchatmessage.line[1]=This event is raised whenever a new chat message is sent in the
+macro.help.event.onsendchatmessage.line[2]=You can access the message that was typed the &cCHAT&6 variable
+macro.help.event.onsendchatmessage.line[3]=within the event.
+

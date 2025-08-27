@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Built-By: MCP (http://mcp.ocean-labs.de)
+Created-By: 25.121-b13 (Oracle Corporation)
+Implementation-Vendor: Mumfrey
+Implementation-Title: macros
+Implementation-Version: 0.15.4
+

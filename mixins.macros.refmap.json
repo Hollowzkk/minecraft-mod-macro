@@ -1,0 +1,208 @@
+{
+  "mappings": {
+    "net/eq2online/macros/core/mixin/IGuiEditSign": {
+      "tileSign": "a:Lawc;"
+    },
+    "net/eq2online/macros/core/mixin/MixinEntityLivingBase": {
+      "onItemPickup": "Lvp;a(Lvg;I)V",
+      "Lnet/minecraft/entity/EntityTracker;sendToTracking(Lnet/minecraft/entity/Entity;Lnet/minecraft/network/Packet;)V": "Lol;a(Lvg;Lht;)V"
+    },
+    "net/eq2online/macros/core/mixin/IContainerCreative": {
+      "itemList": "a:Lfi;",
+      "scrollTo": "a(F)V"
+    },
+    "net/eq2online/macros/core/mixin/MixinGameSettings": {
+      "getKeyDisplayString(I)Ljava/lang/String;": "Lbid;a(I)Ljava/lang/String;"
+    },
+    "net/eq2online/macros/core/mixin/IKeyBinding": {
+      "pressTime": "j:I"
+    },
+    "net/eq2online/macros/core/mixin/IThreadDownloadImageData": {
+      "bufferedImage": "l:Ljava/awt/image/BufferedImage;"
+    },
+    "net/eq2online/macros/core/mixin/IGuiKeyBindingList": {
+      "listEntries": "w:[Lbjm$a;"
+    },
+    "net/eq2online/macros/core/mixin/IGuiControls": {
+      "keyBindingList": "t:Lbmd;"
+    },
+    "net/eq2online/macros/core/mixin/II18n": {
+      "i18nLocale": "a:Lcfb;"
+    },
+    "net/eq2online/macros/core/mixin/IGuiContainer": {
+      "handleMouseClick": "a(Lagr;IILafw;)V",
+      "getSlotAtPosition": "d(II)Lagr;"
+    },
+    "net/eq2online/macros/core/mixin/IGuiContainerCreative": {
+      "currentScroll": "z:F",
+      "setCurrentCreativeTab": "b(Lahp;)V",
+      "destroyItemSlot": "E:Lagr;",
+      "handleMouseClick": "a(Lagr;IILafw;)V",
+      "basicInventory": "x:Luk;"
+    },
+    "net/eq2online/macros/core/mixin/IKeyEntry": {
+      "keybinding": "b:Lbhy;"
+    },
+    "net/eq2online/macros/core/mixin/IRenderGlobal": {
+      "damagedBlocks": "x:Ljava/util/Map;"
+    },
+    "net/eq2online/macros/core/mixin/IGuiGameOver": {
+      "enableButtonsTimer": "a:I"
+    },
+    "net/eq2online/macros/core/mixin/ILocale": {
+      "properties": "a:Ljava/util/Map;"
+    },
+    "net/eq2online/macros/core/mixin/MixinGuiChat": {
+      "keyTyped(CI)V": "Lbkn;a(CI)V",
+      "Lnet/minecraft/client/gui/GuiTextField;mouseClicked(III)Z": "Lbje;a(III)Z",
+      "initGui()V": "Lbkn;b()V",
+      "Lnet/minecraft/client/gui/GuiTextField;setCanLoseFocus(Z)V": "Lbje;d(Z)V",
+      "drawScreen(IIF)V": "Lbkn;a(IIF)V",
+      "Lnet/minecraft/client/gui/GuiTextField;drawTextBox()V": "Lbje;g()V",
+      "mouseClicked(III)V": "Lbkn;a(III)V",
+      "updateScreen()V": "Lbkn;e()V"
+    },
+    "net/eq2online/macros/core/mixin/ICreativeSlot": {
+      "net.minecraft.client.gui.inventory.GuiContainerCreative$CreativeSlot": "bmp$c",
+      "slot": "b:Lagr;"
+    }
+  },
+  "data": {
+    "notch": {
+      "net/eq2online/macros/core/mixin/IGuiEditSign": {
+        "tileSign": "a:Lawc;"
+      },
+      "net/eq2online/macros/core/mixin/MixinEntityLivingBase": {
+        "onItemPickup": "Lvp;a(Lvg;I)V",
+        "Lnet/minecraft/entity/EntityTracker;sendToTracking(Lnet/minecraft/entity/Entity;Lnet/minecraft/network/Packet;)V": "Lol;a(Lvg;Lht;)V"
+      },
+      "net/eq2online/macros/core/mixin/IContainerCreative": {
+        "itemList": "a:Lfi;",
+        "scrollTo": "a(F)V"
+      },
+      "net/eq2online/macros/core/mixin/MixinGameSettings": {
+        "getKeyDisplayString(I)Ljava/lang/String;": "Lbid;a(I)Ljava/lang/String;"
+      },
+      "net/eq2online/macros/core/mixin/IKeyBinding": {
+        "pressTime": "j:I"
+      },
+      "net/eq2online/macros/core/mixin/IThreadDownloadImageData": {
+        "bufferedImage": "l:Ljava/awt/image/BufferedImage;"
+      },
+      "net/eq2online/macros/core/mixin/IGuiKeyBindingList": {
+        "listEntries": "w:[Lbjm$a;"
+      },
+      "net/eq2online/macros/core/mixin/IGuiControls": {
+        "keyBindingList": "t:Lbmd;"
+      },
+      "net/eq2online/macros/core/mixin/II18n": {
+        "i18nLocale": "a:Lcfb;"
+      },
+      "net/eq2online/macros/core/mixin/IGuiContainer": {
+        "handleMouseClick": "a(Lagr;IILafw;)V",
+        "getSlotAtPosition": "d(II)Lagr;"
+      },
+      "net/eq2online/macros/core/mixin/IGuiContainerCreative": {
+        "currentScroll": "z:F",
+        "setCurrentCreativeTab": "b(Lahp;)V",
+        "destroyItemSlot": "E:Lagr;",
+        "handleMouseClick": "a(Lagr;IILafw;)V",
+        "basicInventory": "x:Luk;"
+      },
+      "net/eq2online/macros/core/mixin/IKeyEntry": {
+        "keybinding": "b:Lbhy;"
+      },
+      "net/eq2online/macros/core/mixin/IRenderGlobal": {
+        "damagedBlocks": "x:Ljava/util/Map;"
+      },
+      "net/eq2online/macros/core/mixin/IGuiGameOver": {
+        "enableButtonsTimer": "a:I"
+      },
+      "net/eq2online/macros/core/mixin/ILocale": {
+        "properties": "a:Ljava/util/Map;"
+      },
+      "net/eq2online/macros/core/mixin/MixinGuiChat": {
+        "keyTyped(CI)V": "Lbkn;a(CI)V",
+        "Lnet/minecraft/client/gui/GuiTextField;mouseClicked(III)Z": "Lbje;a(III)Z",
+        "initGui()V": "Lbkn;b()V",
+        "Lnet/minecraft/client/gui/GuiTextField;setCanLoseFocus(Z)V": "Lbje;d(Z)V",
+        "drawScreen(IIF)V": "Lbkn;a(IIF)V",
+        "Lnet/minecraft/client/gui/GuiTextField;drawTextBox()V": "Lbje;g()V",
+        "mouseClicked(III)V": "Lbkn;a(III)V",
+        "updateScreen()V": "Lbkn;e()V"
+      },
+      "net/eq2online/macros/core/mixin/ICreativeSlot": {
+        "net.minecraft.client.gui.inventory.GuiContainerCreative$CreativeSlot": "bmp$c",
+        "slot": "b:Lagr;"
+      }
+    },
+    "searge": {
+      "net/eq2online/macros/core/mixin/IGuiEditSign": {
+        "tileSign": "field_146848_f:Lnet/minecraft/tileentity/TileEntitySign;"
+      },
+      "net/eq2online/macros/core/mixin/MixinEntityLivingBase": {
+        "onItemPickup": "Lnet/minecraft/entity/EntityLivingBase;func_71001_a(Lnet/minecraft/entity/Entity;I)V",
+        "Lnet/minecraft/entity/EntityTracker;sendToTracking(Lnet/minecraft/entity/Entity;Lnet/minecraft/network/Packet;)V": "Lnet/minecraft/entity/EntityTracker;func_151247_a(Lnet/minecraft/entity/Entity;Lnet/minecraft/network/Packet;)V"
+      },
+      "net/eq2online/macros/core/mixin/IContainerCreative": {
+        "itemList": "field_148330_a:Lnet/minecraft/util/NonNullList;",
+        "scrollTo": "func_148329_a(F)V"
+      },
+      "net/eq2online/macros/core/mixin/MixinGameSettings": {
+        "getKeyDisplayString(I)Ljava/lang/String;": "Lnet/minecraft/client/settings/GameSettings;func_74298_c(I)Ljava/lang/String;"
+      },
+      "net/eq2online/macros/core/mixin/IKeyBinding": {
+        "pressTime": "field_151474_i:I"
+      },
+      "net/eq2online/macros/core/mixin/IThreadDownloadImageData": {
+        "bufferedImage": "field_110560_d:Ljava/awt/image/BufferedImage;"
+      },
+      "net/eq2online/macros/core/mixin/IGuiKeyBindingList": {
+        "listEntries": "field_148190_m:[Lnet/minecraft/client/gui/GuiListExtended$IGuiListEntry;"
+      },
+      "net/eq2online/macros/core/mixin/IGuiControls": {
+        "keyBindingList": "field_146494_r:Lnet/minecraft/client/gui/GuiKeyBindingList;"
+      },
+      "net/eq2online/macros/core/mixin/II18n": {
+        "i18nLocale": "field_135054_a:Lnet/minecraft/client/resources/Locale;"
+      },
+      "net/eq2online/macros/core/mixin/IGuiContainer": {
+        "handleMouseClick": "func_184098_a(Lnet/minecraft/inventory/Slot;IILnet/minecraft/inventory/ClickType;)V",
+        "getSlotAtPosition": "func_146975_c(II)Lnet/minecraft/inventory/Slot;"
+      },
+      "net/eq2online/macros/core/mixin/IGuiContainerCreative": {
+        "currentScroll": "field_147067_x:F",
+        "setCurrentCreativeTab": "func_147050_b(Lnet/minecraft/creativetab/CreativeTabs;)V",
+        "destroyItemSlot": "field_147064_C:Lnet/minecraft/inventory/Slot;",
+        "handleMouseClick": "func_184098_a(Lnet/minecraft/inventory/Slot;IILnet/minecraft/inventory/ClickType;)V",
+        "basicInventory": "field_147060_v:Lnet/minecraft/inventory/InventoryBasic;"
+      },
+      "net/eq2online/macros/core/mixin/IKeyEntry": {
+        "keybinding": "field_148282_b:Lnet/minecraft/client/settings/KeyBinding;"
+      },
+      "net/eq2online/macros/core/mixin/IRenderGlobal": {
+        "damagedBlocks": "field_72738_E:Ljava/util/Map;"
+      },
+      "net/eq2online/macros/core/mixin/IGuiGameOver": {
+        "enableButtonsTimer": "field_146347_a:I"
+      },
+      "net/eq2online/macros/core/mixin/ILocale": {
+        "properties": "field_135032_a:Ljava/util/Map;"
+      },
+      "net/eq2online/macros/core/mixin/MixinGuiChat": {
+        "keyTyped(CI)V": "Lnet/minecraft/client/gui/GuiChat;func_73869_a(CI)V",
+        "Lnet/minecraft/client/gui/GuiTextField;mouseClicked(III)Z": "Lnet/minecraft/client/gui/GuiTextField;func_146192_a(III)Z",
+        "initGui()V": "Lnet/minecraft/client/gui/GuiChat;func_73866_w_()V",
+        "Lnet/minecraft/client/gui/GuiTextField;setCanLoseFocus(Z)V": "Lnet/minecraft/client/gui/GuiTextField;func_146205_d(Z)V",
+        "drawScreen(IIF)V": "Lnet/minecraft/client/gui/GuiChat;func_73863_a(IIF)V",
+        "Lnet/minecraft/client/gui/GuiTextField;drawTextBox()V": "Lnet/minecraft/client/gui/GuiTextField;func_146194_f()V",
+        "mouseClicked(III)V": "Lnet/minecraft/client/gui/GuiChat;func_73864_a(III)V",
+        "updateScreen()V": "Lnet/minecraft/client/gui/GuiChat;func_73876_c()V"
+      },
+      "net/eq2online/macros/core/mixin/ICreativeSlot": {
+        "net.minecraft.client.gui.inventory.GuiContainerCreative$CreativeSlot": "net/minecraft/client/gui/inventory/GuiContainerCreative$CreativeSlot",
+        "slot": "field_148332_b:Lnet/minecraft/inventory/Slot;"
+      }
+    }
+  }
+}

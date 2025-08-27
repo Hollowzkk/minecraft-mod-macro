@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scriptactions xmlns:sa="http://eq2online.net/macros/scriptaction">
+    <sa:net>
+        <sa:eq2online>
+            <sa:macros>
+                <sa:scripting>
+                    <sa:actions>
+                        <sa:game>
+                            <sa:scriptactionclearcrafting hidden="false">
+                                <sa:name>CLEARCRAFTING</sa:name>
+                                <sa:usage>CLEARCRAFTING()</sa:usage>
+                                <sa:description>オートクラフトをリセットします。</sa:description>
+                            </sa:scriptactionclearcrafting>
+                            <sa:scriptactioncraft hidden="false">
+                                <sa:name>CRAFT</sa:name>
+                                <sa:usage>CRAFT(&lt;item[:damage]&gt;,[amount],[throw],[verbose])</sa:usage>
+                                <sa:description>オートクラフトのリクエストを送信します。</sa:description>
+                            </sa:scriptactioncraft>
+                            <sa:scriptactioncraftandwait hidden="false">
+                                <sa:name>CRAFTANDWAIT</sa:name>
+                                <sa:usage>CRAFTANDWAIT(&lt;item[:damage]&gt;,[amount],[throw],[verbose])</sa:usage>
+                                <sa:description>オートクラフトのリクエストを送信し、完成まで待ちます。</sa:description>
+                            </sa:scriptactioncraftandwait>
+                            <sa:scriptactiondisconnect hidden="false">
+                                <sa:name>DISCONNECT</sa:name>
+                                <sa:usage>DISCONNECT()</sa:usage>
+                                <sa:description>ゲームから退出、もしくはサーバーから切断し、タイトルに戻ります。</sa:description>
+                            </sa:scriptactiondisconnect>
+                            <sa:scriptactiongetid hidden="false">
+                                <sa:name>GETID</sa:name>
+                                <sa:usage>GETID(&lt;x&gt;,&lt;y&gt;,&lt;z&gt;,&lt;&amp;idvar&gt;,[#datavar])</sa:usage>
+                                <sa:return>指定された座標にあるブロックのID</sa:return>
+                                <sa:description>ワールドにある指定された座標にあるブロックのID、必要に応じてデータ値を取得します。</sa:description>
+                            </sa:scriptactiongetid>
+                            <sa:scriptactiongetidrel hidden="false">
+                                <sa:name>GETIDREL</sa:name>
+                                <sa:usage>GETIDREL(&lt;xoffset&gt;,&lt;yoffset&gt;,&lt;zoffset&gt;,&lt;&amp;idvar&gt;,[#datavar])</sa:usage>
+                                <sa:return>指定された座標にあるブロックのID</sa:return>
+                                <sa:description>プレイヤーからの指定された相対座標にあるブロックのID、必要に応じてデータ値を取得します。</sa:description>
+                            </sa:scriptactiongetidrel>
+                            <sa:scriptactiongetiteminfo>
+                                <sa:name>GETITEMINFO</sa:name>
+                                <sa:usage>GETITEMINFO(&lt;item[:damage]&gt;,[&lt;&amp;namevar&gt;],[#maxstacksize],[&amp;type],[#dropid])</sa:usage>
+                                <sa:return>アイテムの名前</sa:return>
+                                <sa:description>指定されたアイテムの名前やその他情報を取得します。無効なアイテムであれば"None"が返されます。</sa:description>
+                            </sa:scriptactiongetiteminfo>
+                            <sa:scriptactiongetslot hidden="false">
+                                <sa:name>GETSLOT</sa:name>
+                                <sa:usage>GETSLOT(&lt;item[:damage]&gt;,&lt;&amp;idvar&gt;,[startfromslotid])</sa:usage>
+                                <sa:return>マッチするアイテムを持っているスロットのID</sa:return>
+                                <sa:description>指定されたアイテムのIDとマッチするアイテムを持っているスロットのIDを取得します。持っていなければ-1が返されます。</sa:description>
+                            </sa:scriptactiongetslot>
+                            <sa:scriptactiongetslotitem hidden="false">
+                                <sa:name>GETSLOTITEM</sa:name>
+                                <sa:usage>GETSLOTITEM(&lt;slotid&gt;,&lt;&amp;idvar&gt;,[#stacksizevar],[#datavar])</sa:usage>
+                                <sa:return>スロットにあるアイテムのID</sa:return>
+                                <sa:description>指定されたスロットにあるアイテムについての情報を取得します。</sa:description>
+                            </sa:scriptactiongetslotitem>
+                            <sa:scriptactioninventorydown hidden="false">
+                                <sa:name>INVENTORYDOWN</sa:name>
+                                <sa:usage>INVENTORYDOWN([amount])</sa:usage>
+                                <sa:description>ホットバーの選択スロットを指定された数だけ左に移動します。</sa:description>
+                            </sa:scriptactioninventorydown>
+                            <sa:scriptactioninventoryup hidden="false">
+                                <sa:name>INVENTORYUP</sa:name>
+                                <sa:usage>INVENTORYUP([amount])</sa:usage>
+                                <sa:description>ホットバーの選択スロットを指定された数だけ右に移動します。</sa:description>
+                            </sa:scriptactioninventoryup>
+                            <sa:scriptactionitemid hidden="false">
+                                <sa:name>ITEMID</sa:name>
+                                <sa:usage>ITEMID(&lt;item&gt;)</sa:usage>
+                                <sa:return>アイテムの旧ID</sa:return>
+                                <sa:description>指定されたアイテムの旧ID(数値ID)を取得します。</sa:description>
+                            </sa:scriptactionitemid>
+                            <sa:scriptactionitemname hidden="false">
+                                <sa:name>ITEMNAME</sa:name>
+                                <sa:usage>ITEMNAME(&lt;id&gt;)</sa:usage>
+                                <sa:return>指定されたIDのアイテムの名前</sa:return>
+                                <sa:description>指定された旧ID(数値ID)のアイテムの名前を取得します。</sa:description>
+                            </sa:scriptactionitemname>
+                            <sa:scriptactionlook hidden="false">
+                                <sa:name>LOOK</sa:name>
+                                <sa:usage>LOOK(&lt;yaw&gt;,[pitch],[time])</sa:usage>
+                                <sa:description>指定された方向を向きます。相対的に視点を移動するには"+"もしくは"-"を先頭に付けてください。</sa:description>
+                            </sa:scriptactionlook>
+                            <sa:scriptactionlooks hidden="false">
+                                <sa:name>LOOKS</sa:name>
+                                <sa:usage>LOOKS(&lt;yaw&gt;,[pitch],[time])</sa:usage>
+                                <sa:description>指定された方向をスムーズに向きます。相対的に視点を移動するには"+"もしくは"-"を先頭に付けてください。</sa:description>
+                            </sa:scriptactionlooks>
+                            <sa:scriptactionpick hidden="false">
+                                <sa:name>PICK</sa:name>
+                                <sa:usage>PICK(&lt;item[:damage]&gt;,[item[:damage]],...)</sa:usage>
+                                <sa:return>取り出したアイテムのID、取り出せなかったら-1</sa:return>
+                                <sa:description>ホットバーに指定されたアイテムがあればそれを選択し、インベントリからアイテムを取り出していきます。</sa:description>
+                            </sa:scriptactionpick>
+                            <sa:scriptactionplacesign hidden="false">
+                                <sa:name>PLACESIGN</sa:name>
+                                <sa:usage>PLACESIGN([line1],[line2],[line3],[line4],[showgui])</sa:usage>
+                                <sa:description>もし看板を持っていたら、指定されたテキストを書き込みワールドに看板を設置します。</sa:description>
+                            </sa:scriptactionplacesign>
+                            <sa:scriptactionplaysound hidden="false">
+                                <sa:name>PLAYSOUND</sa:name>
+                                <sa:usage>PLAYSOUND(&lt;sound&gt;)</sa:usage>
+                                <sa:description>指定された音を鳴らします。</sa:description>
+                            </sa:scriptactionplaysound>
+                            <sa:scriptactionrespawn hidden="false">
+                                <sa:name>RESPAWN</sa:name>
+                                <sa:usage>RESPAWN()</sa:usage>
+                                <sa:description>プレイヤーが死んでいるならばリスポーンします。</sa:description>
+                            </sa:scriptactionrespawn>
+                            <sa:scriptactionsetslotitem hidden="false">
+                                <sa:name>SETSLOTITEM</sa:name>
+                                <sa:usage>SETSLOTITEM([item[:damage]],[slot],[amount])</sa:usage>
+                                <sa:description>ホットバーのスロットにアイテムを設定します。(クリエイティブモード限定)</sa:description>
+                            </sa:scriptactionsetslotitem>
+                            <sa:scriptactionslot hidden="false">
+                                <sa:name>SLOT</sa:name>
+                                <sa:usage>SLOT(&lt;slot&gt;)</sa:usage>
+                                <sa:description>ホットバーの指定されたスロットを選択します。</sa:description>
+                            </sa:scriptactionslot>
+                            <sa:scriptactionslotclick hidden="false">
+                                <sa:name>SLOTCLICK</sa:name>
+                                <sa:usage>SLOTCLICK(&lt;slot&gt;,[button],[shift])</sa:usage>
+                                <sa:description>GUIの指定されたスロットをクリックします。必要に応じて右クリックやシフトを使うこともできます。</sa:description>
+                            </sa:scriptactionslotclick>
+                            <sa:scriptactionsprint hidden="false">
+                                <sa:name>SPRINT</sa:name>
+                                <sa:usage>SPRINT()</sa:usage>
+                                <sa:description>満腹度が十分な時にプレイヤーを走っている状態にします。</sa:description>
+                            </sa:scriptactionsprint>
+                            <sa:scriptactiontileid hidden="false">
+                                <sa:name>TILEID</sa:name>
+                                <sa:usage>TILEID(&lt;item&gt;)</sa:usage>
+                                <sa:return>ブロックの旧ID</sa:return>
+                                <sa:description>指定されたブロックの旧ID(数値ID)を取得します。</sa:description>
+                            </sa:scriptactiontileid>
+                            <sa:scriptactiontilename hidden="false">
+                                <sa:name>TILENAME</sa:name>
+                                <sa:usage>TILENAME(&lt;id&gt;)</sa:usage>
+                                <sa:return>指定されたIDのブロックの名前</sa:return>
+                                <sa:description>指定された旧ID(数値ID)のブロックの名前を取得します。</sa:description>
+                            </sa:scriptactiontilename>
+                            <sa:scriptactiontrace hidden="false">
+                                <sa:name>TRACE</sa:name>
+                                <sa:usage>TRACE(&lt;distance&gt;,[entities])</sa:usage>
+                                <sa:return>見える物の種類</sa:return>
+                                <sa:description>視点の先に何があるかを判定します。自分からの距離は3-256の中で設定できます。</sa:description>
+                            </sa:scriptactiontrace>
+                            <sa:scriptactionunsprint hidden="false">
+                                <sa:name>UNSPRINT</sa:name>
+                                <sa:usage>UNSPRINT()</sa:usage>
+                                <sa:description>プレイヤーが走っているのを止めさせます。</sa:description>
+                            </sa:scriptactionunsprint>
+                        </sa:game>
+                        <sa:input>
+                            <sa:scriptactionkey hidden="false">
+                                <sa:name>KEY</sa:name>
+                                <sa:usage>KEY(&lt;bind&gt;)</sa:usage>
+                                <sa:description>1tickだけ指定されたキー(用途やマクロが設定済みの場合のみ)を押します。</sa:description>
+                            </sa:scriptactionkey>
+                            <sa:scriptactionkeydown hidden="false">
+                                <sa:name>KEYDOWN</sa:name>
+                                <sa:usage>KEYDOWN(&lt;bind&gt;)</sa:usage>
+                                <sa:description>指定されたキー(用途やマクロが設定済みの場合のみ)を押されている状態にします。</sa:description>
+                            </sa:scriptactionkeydown>
+                            <sa:scriptactionkeyup hidden="false">
+                                <sa:name>KEYUP</sa:name>
+                                <sa:usage>KEYUP(&lt;bind&gt;)</sa:usage>
+                                <sa:description>指定されたキー(用途やマクロが設定済みの場合のみ)を押されていない状態にします。</sa:description>
+                            </sa:scriptactionkeyup>
+                            <sa:scriptactiontogglekey hidden="false">
+                                <sa:name>TOGGLEKEY</sa:name>
+                                <sa:usage>TOGGLEKEY(&lt;bind&gt;)</sa:usage>
+                                <sa:description>指定されたキー(用途やマクロが設定済みの場合のみ)が押されているかいないかを切り替えます。</sa:description>
+                            </sa:scriptactiontogglekey>
+                            <sa:scriptactionpress hidden="false">
+                                <sa:name>PRESS</sa:name>
+                                <sa:usage>PRESS(&lt;lwjgl_name&gt;)</sa:usage>
+                                <sa:description>1tickだけ指定されたキーを実際に直接押したかのようにキーバッファを操作します。</sa:description>
+                            </sa:scriptactionpress>
+                            <sa:scriptactiontype hidden="false">
+                                <sa:name>TYPE</sa:name>
+                                <sa:usage>TYPE(&lt;text&gt;)</sa:usage>
+                                <sa:description>一文字につき1tick指定された文字を実際に直接押したかのようにキーバッファを操作します。</sa:description>
+                            </sa:scriptactiontype>
+                        </sa:input>
+                        <sa:lang>
+                            <sa:scriptactionassign hidden="true">
+                                <sa:name>ASSIGN</sa:name>
+                                <sa:usage>&lt;var&gt; = &lt;value&gt;</sa:usage>
+                                <sa:description>内部関数</sa:description>
+                            </sa:scriptactionassign>
+                            <sa:scriptactionbreak hidden="false">
+                                <sa:name>BREAK</sa:name>
+                                <sa:usage>BREAK</sa:usage>
+                                <sa:description>一番内側のループから抜け出します。</sa:description>
+                            </sa:scriptactionbreak>
+                            <sa:scriptactioncalcyawto hidden="false">
+                                <sa:name>CALCYAWTO</sa:name>
+                                <sa:usage>CALCYAWTO(&lt;xpos&gt;,&lt;zpos&gt;,[#yaw],[#distance])</sa:usage>
+                                <sa:return>座標へのヨーの値</sa:return>
+                                <sa:description>指定された座標の方向へ向いた時のヨーの値を計算します。</sa:description>
+                            </sa:scriptactioncalcyawto>
+                            <sa:scriptactiondec hidden="false">
+                                <sa:name>DEC</sa:name>
+                                <sa:usage>DEC(&lt;#var&gt;,[amount])</sa:usage>
+                                <sa:description>指定された変数を1、もしくは指定された値だけ減らします。</sa:description>
+                            </sa:scriptactiondec>
+                            <sa:scriptactiondecode hidden="false">
+                                <sa:name>DECODE</sa:name>
+                                <sa:usage>DECODE(&lt;input&gt;,[&amp;output])</sa:usage>
+                                <sa:return>デコードされた文字列</sa:return>
+                                <sa:description>base64の文字列をデコードします。</sa:description>
+                            </sa:scriptactiondecode>
+                            <sa:scriptactiondo hidden="false">
+                                <sa:name>DO</sa:name>
+                                <sa:usage>DO([count])</sa:usage>
+                                <sa:description>ループを開始します。数値を指定された場合、指定された数だけループします。</sa:description>
+                            </sa:scriptactiondo>
+                            <sa:scriptactionecho hidden="false">
+                                <sa:name>ECHO</sa:name>
+                                <sa:usage>ECHO(&lt;text&gt;)</sa:usage>
+                                <sa:description>チャットとして指定された文字列を送信します。</sa:description>
+                            </sa:scriptactionecho>
+                            <sa:scriptactionencode hidden="false">
+                                <sa:name>ENCODE</sa:name>
+                                <sa:usage>ENCODE(&lt;input&gt;,[&amp;output])</sa:usage>
+                                <sa:return>エンコードされた文字列</sa:return>
+                                <sa:description>base64で文字列をエンコードします。</sa:description>
+                            </sa:scriptactionencode>
+                            <sa:scriptactionelse hidden="true">
+                                <sa:name>ELSE</sa:name>
+                                <sa:usage>ELSE</sa:usage>
+                                <sa:description>ELSE文</sa:description>
+                            </sa:scriptactionelse>
+                            <sa:scriptactionelseif hidden="true">
+                                <sa:name>ELSEIF</sa:name>
+                                <sa:usage>ELSEIF(&lt;condition&gt;)</sa:usage>
+                                <sa:description>ELSEIF文</sa:description>
+                            </sa:scriptactionelseif>
+                            <sa:scriptactionendif hidden="true">
+                                <sa:name>ENDIF</sa:name>
+                                <sa:usage>ENDIF</sa:usage>
+                                <sa:description>ENDIF文</sa:description>
+                            </sa:scriptactionendif>
+                            <sa:scriptactionendunsafe hidden="true">
+                                <sa:name>ENDUNSAFE</sa:name>
+                                <sa:usage>ENDUNSAFE</sa:usage>
+                                <sa:description>UNSAFEブロックを終了します。</sa:description>
+                            </sa:scriptactionendunsafe>
+                            <sa:scriptactionexec hidden="false">
+                                <sa:name>EXEC</sa:name>
+                                <sa:usage>EXEC(&lt;file.txt&gt;,[taskname],[params],...)</sa:usage>
+                                <sa:description>指定されたスクリプトファイルを実行するタスクを作成します。</sa:description>
+                            </sa:scriptactionexec>
+                            <sa:scriptactionfor hidden="false">
+                                <sa:name>FOR</sa:name>
+                                <sa:usage>FOR(&lt;#var&gt;,&lt;start&gt;,&lt;end&gt;,[step])</sa:usage>
+                                <sa:description>指定された変数を用いてFOR->NEXTループを開始します。#varはループ内で使用できます。</sa:description>
+                            </sa:scriptactionfor>
+                            <sa:scriptactionforeach hidden="false">
+                                <sa:name>FOREACH</sa:name>
+                                <sa:usage>FOREACH(&lt;iterator&gt;)</sa:usage>
+                                <sa:description>指定されたイテレータを用いてループを開始します。</sa:description>
+                            </sa:scriptactionforeach>
+                            <sa:scriptactiongetproperty hidden="false">
+                                <sa:name>GETPROPERTY</sa:name>
+                                <sa:usage>GETPROPERTY(&lt;control&gt;,&lt;property&gt;)</sa:usage>
+                                <sa:description>GUI画面の指定されたパネルのプロパティから値を取得します。</sa:description>
+                            </sa:scriptactiongetproperty>
+                            <sa:scriptactionif hidden="true">
+                                <sa:name>IF</sa:name>
+                                <sa:usage>IF(&lt;condition&gt;)</sa:usage>
+                                <sa:description>IF文</sa:description>
+                            </sa:scriptactionif>
+                            <sa:scriptactionifbeginswith hidden="true">
+                                <sa:name>IFBEGINSWITH</sa:name>
+                                <sa:usage>IFBEGINSWITH(&lt;haystack&gt;,&lt;needle&gt;)</sa:usage>
+                                <sa:description>IFBEGINSWITH文</sa:description>
+                            </sa:scriptactionifbeginswith>
+                            <sa:scriptactionifcontains hidden="true">
+                                <sa:name>IFCONTAINS</sa:name>
+                                <sa:usage>IFCONTAINS(&lt;haystack&gt;,&lt;needle&gt;)</sa:usage>
+                                <sa:description>IFCONTAINS文</sa:description>
+                            </sa:scriptactionifcontains>
+                            <sa:scriptactionifendswith hidden="true">
+                                <sa:name>IFENDSWITH</sa:name>
+                                <sa:usage>IFENDSWITH(&lt;haystack&gt;,&lt;needle&gt;)</sa:usage>
+                                <sa:description>IFENDSWITH文</sa:description>
+                            </sa:scriptactionifendswith>
+                            <sa:scriptactionifmatches hidden="true">
+                                <sa:name>IFMATCHES</sa:name>
+                                <sa:usage>IFMATCHES(&lt;subject&gt;,&lt;pattern&gt;,[&amp;target],[group])</sa:usage>
+                                <sa:description>IFMATCHES文</sa:description>
+                            </sa:scriptactionifmatches>
+                            <sa:scriptactioniif hidden="false">
+                                <sa:name>IIF</sa:name>
+                                <sa:usage>IIF(&lt;condition&gt;,&lt;truetext&gt;,[falsetext])</sa:usage>
+                                <sa:description>条件によって異なったテキストをチャットとして送信します。</sa:description>
+                            </sa:scriptactioniif>
+                            <sa:scriptactioninc hidden="false">
+                                <sa:name>INC</sa:name>
+                                <sa:usage>INC(&lt;#var&gt;,[amount])</sa:usage>
+                                <sa:description>指定された変数を1、もしくは指定された値だけ増やします。</sa:description>
+                            </sa:scriptactioninc>
+                            <sa:scriptactionisrunning hidden="false">
+                                <sa:name>ISRUNNING</sa:name>
+                                <sa:usage>ISRUNNING(&lt;macro&gt;)</sa:usage>
+                                <sa:return>マクロが動いているかどうか</sa:return>
+                                <sa:description>指定したマクロが現在動いているかどうかを取得します。</sa:description>
+                            </sa:scriptactionisrunning>
+                            <sa:scriptactionjoin hidden="false">
+                                <sa:name>JOIN</sa:name>
+                                <sa:usage>JOIN(&lt;glue&gt;,&lt;arrayname&gt;,[&amp;output])</sa:usage>
+                                <sa:return>配列を連結した後の文字列</sa:return>
+                                <sa:description>配列を指定された文字列で連結し、一つの文字列にします。</sa:description>
+                            </sa:scriptactionjoin>
+                            <sa:scriptactionlcase hidden="false">
+                                <sa:name>LCASE</sa:name>
+                                <sa:usage>LCASE(&lt;input&gt;,[&amp;output])</sa:usage>
+                                <sa:return>小文字にした文字列</sa:return>
+                                <sa:description>入力された文字列を小文字に変換し、変数に出力します。</sa:description>
+                            </sa:scriptactionlcase>
+                            <sa:scriptactionlog hidden="false">
+                                <sa:name>LOG</sa:name>
+                                <sa:usage>LOG(&lt;text&gt;)</sa:usage>
+                                <sa:description>指定された文字列をローカルのチャット欄にのみ出力します。</sa:description>
+                            </sa:scriptactionlog>
+                            <sa:scriptactionlograw hidden="false">
+                                <sa:name>LOGRAW</sa:name>
+                                <sa:usage>LOGRAW(&lt;json&gt;)</sa:usage>
+                                <sa:description>バニラのtellrawコマンドのように、JSON文字列を変換しローカルのチャット欄にのみ出力します。</sa:description>
+                            </sa:scriptactionlograw>
+                            <sa:scriptactionlogto hidden="false">
+                                <sa:name>LOGTO</sa:name>
+                                <sa:usage>LOGTO(&lt;target&gt;,&lt;text&gt;)</sa:usage>
+                                <sa:description>指定された文字列を出力します。出力先にはテキストファイルの名前、もしくはテキストエリアの名前を指定してください。</sa:description>
+                            </sa:scriptactionlogto>
+                            <sa:scriptactionloop hidden="false">
+                                <sa:name>LOOP</sa:name>
+                                <sa:usage>LOOP</sa:usage>
+                                <sa:description>DOで開始したループを終了、もしくは繰り返します。</sa:description>
+                            </sa:scriptactionloop>
+                            <sa:scriptactionmatch hidden="false">
+                                <sa:name>MATCH</sa:name>
+                                <sa:usage>MATCH(&lt;subject&gt;,&lt;pattern&gt;,[&amp;target],[group],[default])</sa:usage>
+                                <sa:return>マッチした文字列入り配列</sa:return>
+                                <sa:description>指定された文字列を正規表現でマッチをし、&amp;targetに出力します。</sa:description>
+                            </sa:scriptactionmatch>
+                            <sa:scriptactionnext hidden="false">
+                                <sa:name>NEXT</sa:name>
+                                <sa:usage>NEXT</sa:usage>
+                                <sa:description>FOR->NEXTのループを終了、もしくは繰り返します。</sa:description>
+                            </sa:scriptactionnext>
+                            <sa:scriptactionprompt hidden="false">
+                                <sa:name>PROMPT</sa:name>
+                                <sa:usage>PROMPT(&lt;&amp;target&gt;,&lt;paramstring&gt;,[prompt],[override],[default])</sa:usage>
+                                <sa:return>入力された値</sa:return>
+                                <sa:description>パラメータの入力画面を表示します。</sa:description>
+                            </sa:scriptactionprompt>
+                            <sa:scriptactionrandom hidden="false">
+                                <sa:name>RANDOM</sa:name>
+                                <sa:usage>RANDOM(&lt;#target&gt;,[max],[min])</sa:usage>
+                                <sa:return>乱数</sa:return>
+                                <sa:description>最大値と最小値の間の数の中からランダムに選びます。</sa:description>
+                            </sa:scriptactionrandom>
+                            <sa:scriptactionreplace hidden="false">
+                                <sa:name>REPLACE</sa:name>
+                                <sa:usage>REPLACE(&lt;&amp;subject&gt;,&lt;search&gt;,[replace])</sa:usage>
+                                <sa:return>置換後の文字列</sa:return>
+                                <sa:description>&amp;subjectの内容を指定された文字列で検索しすべて置換します。</sa:description>
+                            </sa:scriptactionreplace>
+                            <sa:scriptactionregexreplace hidden="false">
+                                <sa:name>REGEXREPLACE</sa:name>
+                                <sa:usage>REGEXREPLACE(&lt;&amp;subject&gt;,&lt;search&gt;,[replace])</sa:usage>
+                                <sa:return>置換後の文字列</sa:return>
+                                <sa:description>&amp;subjectの内容を指定された正規表現で検索しすべて置換します。</sa:description>
+                            </sa:scriptactionregexreplace>
+                            <sa:scriptactionset hidden="false">
+                                <sa:name>SET</sa:name>
+                                <sa:usage>SET(&lt;target&gt;,[value])</sa:usage>
+                                <sa:description>指定された変数に値を代入します。省略した場合はtrueが代入されます。</sa:description>
+                            </sa:scriptactionset>
+                            <sa:scriptactionsetlabel hidden="false">
+                                <sa:name>SETLABEL</sa:name>
+                                <sa:usage>SETLABEL(&lt;labelname&gt;,&lt;text&gt;,[binding])</sa:usage>
+                                <sa:description>指定されたラベルのテキストを設定します。</sa:description>
+                            </sa:scriptactionsetlabel>
+                            <sa:scriptactionsetproperty hidden="false">
+                                <sa:name>SETPROPERTY</sa:name>
+                                <sa:usage>SETPROPERTY(&lt;control&gt;,&lt;property&gt;,&lt;value&gt;)</sa:usage>
+                                <sa:description>指定されたGUIのボタンやラベル等のプロパティの値を設定します。</sa:description>
+                            </sa:scriptactionsetproperty>
+                            <sa:scriptactionsplit hidden="false">
+                                <sa:name>SPLIT</sa:name>
+                                <sa:usage>SPLIT(&lt;delimiter&gt;,&lt;source&gt;,[output])</sa:usage>
+                                <sa:return>分割したものを含む配列</sa:return>
+                                <sa:description>指定された文字列を配列に分割します。</sa:description>
+                            </sa:scriptactionsplit>
+                            <sa:scriptactionsqrt hidden="false">
+                                <sa:name>SQRT</sa:name>
+                                <sa:usage>SQRT(&lt;value&gt;,[#outvar])</sa:usage>
+                                <sa:return>二乗根の整数値</sa:return>
+                                <sa:description>指定された値の二乗根を計算し、#outvarに出力します。</sa:description>
+                            </sa:scriptactionsqrt>
+                            <sa:scriptactionstop hidden="false">
+                                <sa:name>STOP</sa:name>
+                                <sa:usage>STOP([id])</sa:usage>
+                                <sa:description>このマクロ、或いは指定されたIDのマクロを停止します。</sa:description>
+                            </sa:scriptactionstop>
+                            <sa:scriptactionstrip hidden="false">
+                                <sa:name>STRIP</sa:name>
+                                <sa:usage>STRIP(&lt;&amp;target&gt;,&lt;text&gt;)</sa:usage>
+                                <sa:return>装飾コードを削除した文字列</sa:return>
+                                <sa:description>指定された文字列からすべての装飾コードを削除し、&amp;targetに出力します。</sa:description>
+                            </sa:scriptactionstrip>
+                            <sa:scriptactiontoggle hidden="false">
+                                <sa:name>TOGGLE</sa:name>
+                                <sa:usage>TOGGLE([flag])</sa:usage>
+                                <sa:description>指定されたブール型の変数の値を切り替えます。</sa:description>
+                            </sa:scriptactiontoggle>
+                            <sa:scriptactionucase hidden="false">
+                                <sa:name>UCASE</sa:name>
+                                <sa:usage>UCASE(&lt;input&gt;,[&amp;output])</sa:usage>
+                                <sa:return>大文字にした文字列</sa:return>
+                                <sa:description>入力された文字列を大文字に変換し、変数に出力します。</sa:description>
+                            </sa:scriptactionucase>
+                            <sa:scriptactionunsafe hidden="true">
+                                <sa:name>UNSAFE</sa:name>
+                                <sa:usage>UNSAFE(&lt;ticks&gt;)</sa:usage>
+                                <sa:description>数tickの時間制限を設けたUNSAFEブロックを開始します。</sa:description>
+                            </sa:scriptactionunsafe>
+                            <sa:scriptactionunset hidden="false">
+                                <sa:name>UNSET</sa:name>
+                                <sa:usage>UNSET(&lt;flag&gt;)</sa:usage>
+                                <sa:description>指定された変数を破棄します。</sa:description>
+                            </sa:scriptactionunset>
+                            <sa:scriptactionuntil hidden="false">
+                                <sa:name>UNTIL</sa:name>
+                                <sa:usage>UNTIL(&lt;condition&gt;)</sa:usage>
+                                <sa:description>DOで開始したループを、条件が真ならば終了し、偽ならば繰り返します。</sa:description>
+                            </sa:scriptactionuntil>
+                            <sa:scriptactionwait hidden="false">
+                                <sa:name>WAIT</sa:name>
+                                <sa:usage>WAIT(&lt;time&gt;)</sa:usage>
+                                <sa:description>指定された時間だけスクリプトを停止します。"ms"でミリ秒を、"t"でtickを表します。</sa:description>
+                            </sa:scriptactionwait>
+                            <sa:scriptactionwhile hidden="false">
+                                <sa:name>WHILE</sa:name>
+                                <sa:usage>WHILE(&lt;condition&gt;)</sa:usage>
+                                <sa:description>DOで開始したループを、条件が真ならば繰り返し、偽ならば終了します。</sa:description>
+                            </sa:scriptactionwhile>
+                            <sa:scriptactionarraysize>
+                                <sa:name>ARRAYSIZE</sa:name>
+                                <sa:usage>ARRAYSIZE(&lt;array&gt;,[&lt;outvar&gt;])</sa:usage>
+                                <sa:return>配列の長さ</sa:return>
+                                <sa:description>配列の長さを取得します。</sa:description>
+                            </sa:scriptactionarraysize>
+                            <sa:scriptactionindexof>
+                                <sa:name>INDEXOF</sa:name>
+                                <sa:usage>INDEXOF(&lt;array&gt;,&lt;outvar&gt;,&lt;searchfor&gt;)</sa:usage>
+                                <sa:return>探している値のインデックス</sa:return>
+                                <sa:description>配列の中から値を探し、最初に見つかった値のインデックスを、無ければ-1を出力します。</sa:description>
+                            </sa:scriptactionindexof>
+                            <sa:scriptactionpop>
+                                <sa:name>POP</sa:name>
+                                <sa:usage>POP(&lt;array&gt;,&lt;outvar&gt;)</sa:usage>
+                                <sa:description>配列の一番後ろの値を消去して、消去した値を出力します。</sa:description>
+                            </sa:scriptactionpop>
+                            <sa:scriptactionpush>
+                                <sa:name>PUSH</sa:name>
+                                <sa:usage>PUSH(&lt;array&gt;,&lt;value&gt;)</sa:usage>
+                                <sa:description>配列の一番後ろに値を追加します。</sa:description>
+                            </sa:scriptactionpush>
+                            <sa:scriptactionput>
+                                <sa:name>PUT</sa:name>
+                                <sa:usage>PUT(&lt;array&gt;,&lt;value&gt;)</sa:usage>
+                                <sa:description>配列の中で一番最初にある空のインデックスに値を挿入します。</sa:description>
+                            </sa:scriptactionput>
+                        </sa:lang>
+                        <sa:mod>
+                            <sa:scriptactionconfig hidden="false">
+                                <sa:name>CONFIG</sa:name>
+                                <sa:usage>CONFIG(&lt;configname&gt;)</sa:usage>
+                                <sa:description>指定されたコンフィグに切り替えます。</sa:description>
+                            </sa:scriptactionconfig>
+                            <sa:scriptactionimport hidden="false">
+                                <sa:name>IMPORT</sa:name>
+                                <sa:usage>IMPORT(&lt;configname&gt;)</sa:usage>
+                                <sa:description>指定されたコンフィグを上書きインポートします。</sa:description>
+                            </sa:scriptactionimport>
+                            <sa:scriptactionunimport hidden="false">
+                                <sa:name>UNIMPORT</sa:name>
+                                <sa:usage>UNIMPORT()</sa:usage>
+                                <sa:description>指定されたコンフィグを、もし上書きされていたなら解除します。</sa:description>
+                            </sa:scriptactionunimport>
+                        </sa:mod>
+                        <sa:option>
+                            <sa:scriptactionbind hidden="false">
+                                <sa:name>BIND</sa:name>
+                                <sa:usage>BIND(&lt;bind&gt;,&lt;keycode&gt;)</sa:usage>
+                                <sa:description>指定されたキーコードに、指定されたもう一方のキーに設定されているマクロを設定します。</sa:description>
+                            </sa:scriptactionbind>
+                            <sa:scriptactioncamera hidden="false">
+                                <sa:name>CAMERA</sa:name>
+                                <sa:usage>CAMERA([mode])</sa:usage>
+                                <sa:description>カメラのモードを設定します。引数が無ければモードを順に切り替えます。</sa:description>
+                            </sa:scriptactioncamera>
+                            <sa:scriptactionchatheight hidden="false">
+                                <sa:name>CHATHEIGHT</sa:name>
+                                <sa:usage>CHATHEIGHT(&lt;value&gt;,[time])</sa:usage>
+                                <sa:description>チャット欄の高さを設定します。高さは20-180の中で設定できます。</sa:description>
+                            </sa:scriptactionchatheight>
+                            <sa:scriptactionchatheightfocused hidden="false">
+                                <sa:name>CHATHEIGHTFOCUSED</sa:name>
+                                <sa:usage>CHATHEIGHTFOCUSED(&lt;value&gt;,[time])</sa:usage>
+                                <sa:description>チャット欄を開いでいるときの高さを設定します。高さは20-180の中で設定できます。</sa:description>
+                            </sa:scriptactionchatheightfocused>
+                            <sa:scriptactionchatopacity hidden="false">
+                                <sa:name>CHATOPACITY</sa:name>
+                                <sa:usage>CHATOPACITY(&lt;value&gt;,[time])</sa:usage>
+                                <sa:description>チャット欄の透明度を設定します。透明度は0-100の中で設定できます。</sa:description>
+                            </sa:scriptactionchatopacity>
+                            <sa:scriptactionchatscale hidden="false">
+                                <sa:name>CHATSCALE</sa:name>
+                                <sa:usage>CHATSCALE(&lt;value&gt;,[time])</sa:usage>
+                                <sa:description>チャット欄の縮尺を設定します。縮尺は0-100の中で設定できます。</sa:description>
+                            </sa:scriptactionchatscale>
+                            <sa:scriptactionchatvisible hidden="false">
+                                <sa:name>CHATVISIBLE</sa:name>
+                                <sa:usage>CHATVISIBLE(&lt;value&gt;)</sa:usage>
+                                <sa:description>チャット欄を表示するかどうかを設定します。</sa:description>
+                            </sa:scriptactionchatvisible>
+                            <sa:scriptactionchatwidth hidden="false">
+                                <sa:name>CHATWIDTH</sa:name>
+                                <sa:usage>CHATWIDTH(&lt;value&gt;,[time])</sa:usage>
+                                <sa:description>チャット欄の幅を設定します。幅は40-320の中で設定できます。</sa:description>
+                            </sa:scriptactionchatwidth>
+                            <sa:scriptactionfog hidden="false">
+                                <sa:name>FOG</sa:name>
+                                <sa:usage>FOG([value])</sa:usage>
+                                <sa:description>描画距離を設定します。</sa:description>
+                            </sa:scriptactionfog>
+                            <sa:scriptactionfov hidden="false">
+                                <sa:name>FOV</sa:name>
+                                <sa:usage>FOV(&lt;value&gt;,[time])</sa:usage>
+                                <sa:description>視野を角度で設定します。秒数を指定すると徐々に視野を変化させることができます。</sa:description>
+                            </sa:scriptactionfov>
+                            <sa:scriptactiongamma hidden="false">
+                                <sa:name>GAMMA</sa:name>
+                                <sa:usage>GAMMA(&lt;value&gt;,[time])</sa:usage>
+                                <sa:description>明るさをパーセントで設定します。秒数を指定すると徐々に明るさを変化させることができます。</sa:description>
+                            </sa:scriptactiongamma>
+                            <sa:scriptactionmusic hidden="false">
+                                <sa:name>MUSIC</sa:name>
+                                <sa:usage>MUSIC(&lt;value&gt;,[time])</sa:usage>
+                                <sa:description>BGMの音量を設定します。秒数を指定すると徐々に音量を変化させることができます。</sa:description>
+                            </sa:scriptactionmusic>
+                            <sa:scriptactionreloadresources hidden="false">
+                                <sa:name>RELOADRESOURCES</sa:name>
+                                <sa:usage>RELOADRESOURCES</sa:usage>
+                                <sa:description>F3 + Tと同様に、リソースパックを再読み込みします。</sa:description>
+                            </sa:scriptactionreloadresources>
+                            <sa:scriptactionresourcepacks hidden="false">
+                                <sa:name>RESOURCEPACKS</sa:name>
+                                <sa:usage>RESOURCEPACKS([pattern],[pattern...])</sa:usage>
+                                <sa:description>リソースパックを指定された順番で設定します。</sa:description>
+                            </sa:scriptactionresourcepacks>
+                            <sa:scriptactionsensitivity hidden="false">
+                                <sa:name>SENSITIVITY</sa:name>
+                                <sa:usage>SENSITIVITY(&lt;value&gt;,[time])</sa:usage>
+                                <sa:description>マウス感度を設定します。秒数を指定すると徐々にマウス感度を変化させることができます。</sa:description>
+                            </sa:scriptactionsensitivity>
+                            <sa:scriptactionshadergroup hidden="false">
+                                <sa:name>SHADERGROUP</sa:name>
+                                <sa:usage>SHADERGROUP([path])</sa:usage>
+                                <sa:description>シェーダーを設定します。"+"を指定するとシェーダーを切り替えます。</sa:description>
+                            </sa:scriptactionshadergroup>
+                            <sa:scriptactionsetres hidden="false">
+                                <sa:name>SETRES</sa:name>
+                                <sa:usage>SETRES(&lt;width&gt;,&lt;height&gt;)</sa:usage>
+                                <sa:description>Minecraftのウィンドウの大きさを設定します。</sa:description>
+                            </sa:scriptactionsetres>
+                            <sa:scriptactionvolume hidden="false">
+                                <sa:name>VOLUME</sa:name>
+                                <sa:usage>VOLUME(&lt;value&gt;,[time])</sa:usage>
+                                <sa:description>主音量を設定します。秒数を指定すると徐々に音量を変化させることができます。</sa:description>
+                            </sa:scriptactionvolume>
+                        </sa:option>
+                        <sa:scriptactionachievementget hidden="false">
+                            <sa:name>ACHIEVEMENTGET</sa:name>
+                            <sa:usage>ACHIEVEMENTGET(&lt;text&gt;,[itemid[:damage]])</sa:usage>
+                            <sa:description>"進捗達成！"ポップアップを表示します。</sa:description>
+                        </sa:scriptactionachievementget>
+                        <sa:scriptactionbindgui hidden="false">
+                            <sa:name>BINDGUI</sa:name>
+                            <sa:usage>BINDGUI(&lt;slot&gt;,&lt;screen&gt;)</sa:usage>
+                            <sa:description>GUIのスロットに指定された画面を設定します。</sa:description>
+                        </sa:scriptactionbindgui>
+                        <sa:scriptactionclearchat hidden="false">
+                            <sa:name>CLEARCHAT</sa:name>
+                            <sa:usage>CLEARCHAT()</sa:usage>
+                            <sa:description>チャット欄をクリアします。</sa:description>
+                        </sa:scriptactionclearchat>
+                        <sa:scriptactiongui hidden="false">
+                            <sa:name>GUI</sa:name>
+                            <sa:usage>GUI([name])</sa:usage>
+                            <sa:description>MinecraftのGUI画面を表示/非表示します。</sa:description>
+                        </sa:scriptactiongui>
+                        <sa:scriptactionpopupmessage hidden="false">
+                            <sa:name>POPUPMESSAGE</sa:name>
+                            <sa:usage>POPUPMESSAGE(&lt;message&gt;,[animate])</sa:usage>
+                            <sa:description>アクションバーにメッセージを表示します。</sa:description>
+                        </sa:scriptactionpopupmessage>
+                        <sa:scriptactionrepl hidden="true">
+                            <sa:name>REPL</sa:name>
+                            <sa:usage>REPL</sa:usage>
+                            <sa:description>対話型コンソールを開きます。(試験中)</sa:description>
+                        </sa:scriptactionrepl>
+                        <sa:scriptactionshowgui hidden="false">
+                            <sa:name>SHOWGUI</sa:name>
+                            <sa:usage>SHOWGUI(&lt;screen&gt;,[esc_screen])</sa:usage>
+                            <sa:description>GUI画面を表示します。</sa:description>
+                        </sa:scriptactionshowgui>
+                        <sa:scriptactionstore hidden="false">
+                            <sa:name>STORE</sa:name>
+                            <sa:usage>STORE(&lt;type&gt;,[name])</sa:usage>
+                            <sa:description>今の環境をパラメーターのリストに追加します。</sa:description>
+                        </sa:scriptactionstore>
+                        <sa:scriptactionstoreover hidden="false">
+                            <sa:name>STOREOVER</sa:name>
+                            <sa:usage>STOREOVER(&lt;type&gt;,[name])</sa:usage>
+                            <sa:description>今の環境をパラメータのリストに追加し、既に指定された名前のパラメータが存在すれば上書きします。</sa:description>
+                        </sa:scriptactionstoreover>
+                        <sa:scriptactiontime hidden="false">
+                            <sa:name>TIME</sa:name>
+                            <sa:usage>TIME(&lt;[&amp;target&gt;],[format])</sa:usage>
+                            <sa:return>現在時刻の文字列</sa:return>
+                            <sa:description>指定された変数に現在時刻を代入します。必要に応じてフォーマットを指定できます(例:yyyyMMdd)。</sa:description>
+                        </sa:scriptactiontime>
+                        <sa:scriptactiontitle hidden="false">
+                            <sa:name>TITLE</sa:name>
+                            <sa:usage>TITLE([title],[subtitle],[inticks],[showticks],[outticks])</sa:usage>
+                            <sa:description>指定されたタイトルを表示します。引数が無ければ今表示されているタイトルを非表示にします。</sa:description>
+                        </sa:scriptactiontitle>
+                      <sa:scriptactiontoast hidden="false">
+                        <sa:name>TOAST</sa:name>
+                        <sa:usage>TOAST(&lt;type&gt;,&lt;icon&gt;,&lt;text1&gt;,&lt;text2&gt;,[ticks])</sa:usage>
+                        <sa:description>右上に指定された&quot;トースト&quot;ポップアップを表示します。</sa:description>
+                      </sa:scriptactiontoast>
+                    </sa:actions>
+                </sa:scripting>
+                <sa:modules>
+                    <sa:chatfilter>
+                     <sa:scriptactions>
+                         <sa:scriptactionchatfilter hidden="false">
+                             <sa:name>CHATFILTER</sa:name>
+                             <sa:usage>CHATFILTER(&lt;enabled&gt;)</sa:usage>
+                             <sa:description>チャットフィルターを有効/無効にします。</sa:description>
+                         </sa:scriptactionchatfilter>
+                         <sa:scriptactionfilter hidden="false">
+                             <sa:name>FILTER</sa:name>
+                             <sa:usage>FILTER</sa:usage>
+                             <sa:description>フィルタによってチャットメッセージを削除します。</sa:description>
+                         </sa:scriptactionfilter>
+                         <sa:scriptactionmodify hidden="false">
+                             <sa:name>MODIFY</sa:name>
+                             <sa:usage>MODIFY(&lt;newmessage&gt;)</sa:usage>
+                             <sa:description>フィルタによってチャットメッセージを改変します。</sa:description>
+                         </sa:scriptactionmodify>
+                            <sa:scriptactionpass hidden="false">
+                                <sa:name>PASS</sa:name>
+                                <sa:usage>PASS</sa:usage>
+                                <sa:description>フィルタによってチャットメッセージをそのまま流します。</sa:description>
+                            </sa:scriptactionpass>
+                     </sa:scriptactions>
+                    </sa:chatfilter>
+                </sa:modules>
+            </sa:macros>
+        </sa:eq2online>
+    </sa:net>
+</scriptactions>

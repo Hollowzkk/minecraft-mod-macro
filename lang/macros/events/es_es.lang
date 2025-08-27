@@ -1,0 +1,154 @@
+macro.help.event.line3=Estas editando un Macro de &cevento&6. Este tipo de Macro no acepta
+macro.help.event.line4=parametros. Puedes incluir archivos usando&c $$<archivo.txt>
+macro.help.event.line5=y debes iniciar y detener scripts con &c$${&6 y &c}$$&6¬
+
+# Event 1000 (onJoinGame)
+
+macro.help.event.onjoingame.line[0]=&fEntrar
+macro.help.event.onjoingame.line[1]=Este evento se activa cuanto empiezas a jugar (1 jugador o
+macro.help.event.onjoingame.line[2]=multijugador) y puede ser usado para iniciar otros scripts o
+macro.help.event.onjoingame.line[3]=usar comandos en un servidor al entrar.
+
+# Event 1001 (onChat)
+
+macro.help.event.onchat.line[0]=&fChat
+macro.help.event.onchat.line[1]=Este evento se activa cada vez que se recibe un mensaje nuevo en
+macro.help.event.onchat.line[2]=el chat. Puedes usar dicho mensaje incluyendo la variable
+macro.help.event.onchat.line[3]=&cCHAT&6 en el script.
+
+# Event 1002 (onHealthChange)
+
+macro.help.event.onhealthchange.line[0]=fSalud
+macro.help.event.onhealthchange.line[1]=ste evento se activa cada vez que tu nivel de salud cambia.
+macro.help.event.onhealthchange.line[2]=ada corazon representa 2 puntos de salud, asi que el maximo
+macro.help.event.onhealthchange.line[3]=s 20. Puedes obtener el nivel actual de salud usando la variable
+macro.help.event.onhealthchange.line[4]=&cHEALTH&6 en el script.
+
+# Event 1003 (onFoodChange)
+
+macro.help.event.onfoodchange.line[0]=&fHambre
+macro.help.event.onfoodchange.line[1]=Este evento se activa cada vez que tu nivel de hambre cambia.
+macro.help.event.onfoodchange.line[2]=Cada icono representa 2 puntos de hambre, asi que el maximo
+macro.help.event.onfoodchange.line[3]=es 20. Puedes obtener el nivel actual de salud usando la variable
+macro.help.event.onfoodchange.line[4]=&cHEALTH&6 en el script.
+
+# Event 1004 (onArmourChange)
+
+macro.help.event.onarmourchange.line[0]=&fArmadura
+macro.help.event.onarmourchange.line[1]=Este evento se activa cada vez que el estado de la armadura cambia.
+macro.help.event.onarmourchange.line[2]=Cada icono representa 2 puntos de armadura, asi que el maximo
+macro.help.event.onarmourchange.line[3]=es 20. Puedes obtener el nivel actual de salud usando la variable
+macro.help.event.onarmourchange.line[4]=&cARMOUR&6 en el script.
+
+# Event 1005 (onWorldChange)
+
+macro.help.event.onworldchange.line[0]=&fCambio de Mundo
+macro.help.event.onworldchange.line[1]=Este evento se activa cada vez que cambias de mundo, por ejemplo
+macro.help.event.onworldchange.line[2]=cuando entras al Nether o al End o vuelves al mundo normal.
+macro.help.event.onworldchange.line[3]=Tambi�n cuando el servidor utiliza otros mundos y cambias
+macro.help.event.onworldchange.line[4]=a unos de estos.
+
+# Event 1006 (onModeChange)
+
+macro.help.event.onmodechange.line[0]=&fModo de Juego
+macro.help.event.onmodechange.line[1]=Este evento se activa cada vez que tu modo de juego cambia de
+macro.help.event.onmodechange.line[2]=supervivencia a creativo, o viceversa.
+
+# Event 1007 (onInventorySlotChange)
+
+macro.help.event.oninventoryslotchange.line[0]=&fSlot del Inventario
+macro.help.event.oninventoryslotchange.line[1]=Este evento se activa cuando cambia el slot del inventario
+macro.help.event.oninventoryslotchange.line[2]=seleccionado. Puedes acceder a la ranura previa seleccionada
+macro.help.event.oninventoryslotchange.line[3]=usando la variable &cOLDINVSLOT&6 en el script.
+
+# Event 1008 (onOxygenChange)
+
+macro.help.event.onoxygenchange.line[0]=&fOx�geno
+macro.help.event.onoxygenchange.line[1]=Este evento se activa cuando tu nivel de oxigeno cambia.
+macro.help.event.onoxygenchange.line[2]=El oxigeno solo cambia mientras estas bajo agua, y representa
+macro.help.event.onoxygenchange.line[3]=el tiempo que puedes permanecer sumergido sin sufrir perdida
+macro.help.event.onoxygenchange.line[4]=de salud. Puedes obtener el nivel de oxigeno usando la
+macro.help.event.onoxygenchange.line[5]=variable &cOXYGEN&6 en el script.
+
+# Event 1009 (onXPChange)
+
+macro.help.event.onxpchange.line[0]=&fExperiencia
+macro.help.event.onxpchange.line[1]=Este evento se activa cuando de experiencia cambia.
+macro.help.event.onxpchange.line[2]=Puedes obtener tu cantidad de experiencia usando las
+macro.help.event.onxpchange.line[3]=variables &cTOTALXP&6 y &cXP&6 en el script.
+
+# Event 1010 (onLevelChange)
+
+macro.help.event.onlevelchange.line[0]=&fNivel
+macro.help.event.onlevelchange.line[1]=Este evento se activa cuando tu nivel cambia. Puedes obtener
+macro.help.event.onlevelchange.line[2]=tu nivel actual usando la variable &cLEVEL&6 en el script.
+
+# Event 1011 (onItemDurabilityChange)
+
+macro.help.event.onitemdurabilitychange.line[0]=&fDesgaste
+macro.help.event.onitemdurabilitychange.line[1]=Este evento se activa cuando el nivel de desgaste del objeto
+macro.help.event.onitemdurabilitychange.line[2]=que tienes en la mano cambia. Puedes acceder al nivel de
+macro.help.event.onitemdurabilitychange.line[3]=desgaste del objeto activo usando la variable &cDURABILITY
+macro.help.event.onitemdurabilitychange.line[4]=en el script.
+
+# Event 1012 (onWeatherChange)
+
+macro.help.event.onweatherchange.line[0]=&fClima
+macro.help.event.onweatherchange.line[1]=Este evento se activa cuando el clima cambia. Puedes
+macro.help.event.onweatherchange.line[2]=obtener el nivel de fuerza de la lluvia usando la
+macro.help.event.onweatherchange.line[3]=variable &cRAIN&6 en el script.
+
+# Event 1013 (onPickupItem)
+
+macro.help.event.onpickupitem.line[0]=&fRecoger
+macro.help.event.onpickupitem.line[1]=Este evento se activa cuando coges algo del suelo. Puedes
+macro.help.event.onpickupitem.line[2]=obtener la ID de ese objeto con la variable &cPICKUPID&b, el
+macro.help.event.onpickupitem.line[3]=nombre del objeto con la variable &cPICKUPITEM&6, o la
+macro.help.event.onpickupitem.line[4]=cantidad de objetos recogidos usando la variable
+macro.help.event.onpickupitem.line[5]=&cPICKUPAMOUNT&6.
+
+# Event 1014 (onPlayerJoined)
+
+macro.help.event.onplayerjoined.line[0]=&fUsuario se conecta
+macro.help.event.onplayerjoined.line[1]=Este evento se activa cuando un jugador se conecta a una
+macro.help.event.onplayerjoined.line[2]=partida multijugador. Puedes obtener el nombre del
+macro.help.event.onplayerjoined.line[3]=jugador usando la variable &cJOINEDPLAYER&6 en el script.
+
+# Event 1015 (onShowGui)
+
+macro.help.event.onshowgui.line[0]=&fGUI
+macro.help.event.onshowgui.line[1]=Este evento se activa cuando la pantalla de opciones de
+macro.help.event.onshowgui.line[2]=Minecraft cambia. Puedes obtener el nombre de dicha
+macro.help.event.onshowgui.line[3]=pantalla usando la variable &cGUI&6 en el script.
+
+# Event 1016 (onArmourDurabilityChange)
+
+macro.help.event.onarmourdurabilitychange.line[0]=&fDesgaste de Armadura
+macro.help.event.onarmourdurabilitychange.line[1]=Este evento se activa cuando el nivel de desgaste de cualquier
+macro.help.event.onarmourdurabilitychange.line[2]=parte de la armadura que lleves cambia. Ya que pueden ser hasta
+macro.help.event.onarmourdurabilitychange.line[3]=4 objetos diferentes, no existe ninguna variable para obtener
+macro.help.event.onarmourdurabilitychange.line[4]=el nivel de desgaste de la armadura. Para eso, tal vez
+macro.help.event.onarmourdurabilitychange.line[5]=quieras usar el evento "onArmourChange"
+
+# Event 1017 (onAutoCraftingComplete)
+
+macro.help.event.onautocraftingcomplete.line[0]=&fAuto-Crafting
+macro.help.event.onautocraftingcomplete.line[1]=Este evento se activa cuando cualquier proceso de auto-crafting
+macro.help.event.onautocraftingcomplete.line[2]=finaliza. Puedes usar el motivo de la finalizacion usando la
+macro.help.event.onautocraftingcomplete.line[3]=variable &cREASON&6 en el script.
+
+# Event 1018 (onConfigChange)
+
+macro.help.event.onconfigchange.line[0]=&fConfiguración
+macro.help.event.onconfigchange.line[1]=Este evento se activa cuando se cambia la configuración.
+macro.help.event.onconfigchange.line[2]=Puedes obtener el nombre de la nueva configuración usando
+macro.help.event.onconfigchange.line[3]=la variable &cCONFIG. &c&lTen en cuenta que este evento
+macro.help.event.onconfigchange.line[4]=&c&lestá configurado para la &nnueva&r &c&lconfiguraci�n
+macro.help.event.onconfigchange.line[5]=&ny no para la anterior!
+
+# Event 1020 (onSendChatMessage)
+
+macro.help.event.onsendchatmessage.line[0]=&f<onSendChatMessage>
+macro.help.event.onsendchatmessage.line[1]=Este evento de activa cada vez que se envía un nuevo evento en el chat
+macro.help.event.onsendchatmessage.line[2]=Puedes acceder al mensaje que se ha escrito en la variable &cCHAT
+macro.help.event.onsendchatmessage.line[3]=en el evento.

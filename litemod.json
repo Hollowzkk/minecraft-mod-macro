@@ -1,0 +1,10 @@
+{
+  "name": "macros",
+  "version": "0.15.4",
+  "mcversion": "1.12.r2",
+  "revision": "1540",
+  "mixinConfigs": [
+    "mixins.macros.json"
+  ],
+  "description": "The Macro/Keybind Mod allows you to create simple keybinds or incredibly complex macros to automate your minecraft experience. Also lets you create custom GUIs and much more."
+}
